@@ -5,7 +5,10 @@
 	"license": "Apache-2.0",
 	"scripts": {
 		"lint-php": "vendor/bin/phpcs",
-		"fix-php": "vendor/bin/phpcbf"
+		"fix-php": "vendor/bin/phpcbf",
+		"phpcs-allow-todo": [
+			"vendor/bin/phpcs -ps --exclude=Generic.Commenting.Todo --colors"
+		]
 	},
 	"require-dev": {
 		"wp-coding-standards/wpcs": "^3.3",
