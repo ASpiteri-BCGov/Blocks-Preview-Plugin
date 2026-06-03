@@ -1,0 +1,53 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "blocks-preview/base-field",
+	"version": "0.1.0",
+	"title": "Base Field",
+	"category": "widgets",
+	"icon": "forms",
+	"description": "BaseField is an internal (i.e., not exported in the index.js) primitive component used for building more complex fields like TextField. It provides error handling and focus styles for field components. It does not handle layout of the component aside from wrapping the field in a Flex wrapper.",
+	"documentation": "https://developer.wordpress.org/block-editor/reference-guides/components/base-field/",
+	"experimental": true,
+	"example": {},
+	"attributes": {
+		"value": {
+			"type": "string",
+			"default": ""
+		},
+		"prefix": {
+			"type": "string",
+			"default": ""
+		},
+		"suffix": {
+			"type": "string",
+			"default": ""
+		},
+		"disabled": {
+			"type": "boolean",
+			"default": false
+		},
+		"hasError": {
+			"type": "boolean",
+			"default": false
+		},
+		"isInline": {
+			"type": "boolean",
+			"default": false
+		},
+		"isSubtle": {
+			"type": "boolean",
+			"default": false
+		}
+	},
+	"supports": {
+		"html": false,
+		"interactivity": {
+			"clientNavigation": true
+		}
+	},
+	"textdomain": "blocks-preview",
+	"editorScript": "file:./index.js",
+	"editorStyle": "file:./index.css",
+	"style": "file:./style-index.css"
+}
