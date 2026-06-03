@@ -1,0 +1,27 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "blocks-preview/popover",
+	"version": "0.1.0",
+	"title": "Popover",
+	"category": "blocks-preview",
+	"icon": "admin-comments",
+	"example": {},
+	"attributes": {
+		"buttonText": {
+			"type": "string",
+			"default": "Toggle popover"
+		},
+		"content": {
+			"type": "string",
+			"default": "Popover content goes here."
+		}
+	},
+	"supports": {
+		"html": false
+	},
+	"textdomain": "blocks-preview",
+	"editorScript": "file:./index.js",
+	"editorStyle": "file:./index.css",
+	"style": "file:./style-index.css"
+}

@@ -1,0 +1,23 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "blocks-preview/menu-item",
+	"version": "0.1.0",
+	"title": "Menu Item",
+	"category": "blocks-preview",
+	"icon": "menu-alt",
+	"example": {},
+	"attributes": {
+		"label": {
+			"type": "string",
+			"default": "Menu item"
+		}
+	},
+	"supports": {
+		"html": false
+	},
+	"textdomain": "blocks-preview",
+	"editorScript": "file:./index.js",
+	"editorStyle": "file:./index.css",
+	"style": "file:./style-index.css"
+}
