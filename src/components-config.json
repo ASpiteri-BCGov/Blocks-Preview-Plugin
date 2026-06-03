@@ -1,0 +1,32 @@
+{
+	"base-field": {
+		"experimental": true,
+		"description": "BaseField is an internal (i.e., not exported in the index.js) primitive component used for building more complex fields like TextField. It provides error handling and focus styles for field components. It does not handle layout of the component aside from wrapping the field in a Flex wrapper.",
+		"documentation": "https://developer.wordpress.org/block-editor/reference-guides/components/base-field/"
+	},
+	"alignment-matrix-control": {
+		"experimental": false,
+		"description": "AlignmentMatrixControl components enable adjustments to horizontal and vertical alignments for UI.",
+		"documentation": "https://developer.wordpress.org/block-editor/reference-guides/components/alignment-matrix-control/"
+	},
+	"angle-picker-control": {
+		"experimental": false,
+		"description": "AnglePickerControl is a React component to render a UI that allows users to pick an angle. Users can choose an angle in a visual UI with the mouse by dragging an angle indicator inside a circle or by directly inserting the desired angle in a text field.",
+		"documentation": "https://developer.wordpress.org/block-editor/reference-guides/components/angle-picker-control/"
+	},
+	"animate": {
+		"experimental": false,
+		"description": "Simple interface to introduce animations to components.",
+		"documentation": "https://developer.wordpress.org/block-editor/reference-guides/components/animate/"
+	},
+	"autocomplete": {
+		"experimental": false,
+		"description": "This component is used to provide autocompletion support for a child input component. The Autocomplete component is not currently intended to be used as a standalone component. It is used by other packages to provide autocompletion support for the block editor.",
+		"documentation": "https://developer.wordpress.org/block-editor/reference-guides/components/autocomplete/"
+	},
+	"base-control": {
+		"experimental": false,
+		"description": "BaseControl is a low-level component used to generate labels and help text for components handling user inputs.",
+		"documentation": "https://developer.wordpress.org/block-editor/reference-guides/components/base-control/"
+	}
+}

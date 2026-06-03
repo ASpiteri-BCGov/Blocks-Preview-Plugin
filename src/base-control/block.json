@@ -1,0 +1,35 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "blocks-preview/base-control",
+	"version": "0.1.0",
+	"title": "Base Control",
+	"category": "blocks-preview",
+	"icon": "editor-ul",
+	"example": {},
+	"attributes": {
+		"label": {
+			"type": "string",
+			"default": "Message"
+		},
+		"help": {
+			"type": "string",
+			"default": "Additional description for the control."
+		},
+		"hideLabelFromVision": {
+			"type": "boolean",
+			"default": false
+		},
+		"value": {
+			"type": "string",
+			"default": ""
+		}
+	},
+	"supports": {
+		"html": false
+	},
+	"textdomain": "blocks-preview",
+	"editorScript": "file:./index.js",
+	"editorStyle": "file:./index.css",
+	"style": "file:./style-index.css"
+}

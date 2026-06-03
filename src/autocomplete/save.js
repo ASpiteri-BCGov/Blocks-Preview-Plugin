@@ -1,0 +1,24 @@
+/**
+ * WordPress dependencies
+ */
+import { useBlockProps } from '@wordpress/block-editor';
+
+/**
+ * @param {import('@wordpress/blocks').BlockSaveProps} props
+ */
+export default function save( { attributes } ) {
+	const { content } = attributes;
+
+	const blockProps = useBlockProps.save( {
+		className:
+			'blocks-preview-component-block blocks-preview-autocomplete-block',
+	} );
+
+	return (
+		<div { ...blockProps }>
+			<p className="blocks-preview-component-block__saved-value">
+				{ content }
+			</p>
+		</div>
+	);
+}

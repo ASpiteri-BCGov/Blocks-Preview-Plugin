@@ -12,7 +12,7 @@ export default function save( { attributes } ) {
 
 	const blockProps = useBlockProps.save( {
 		className: [
-			'blocks-preview-base-field-block',
+			'blocks-preview-component-block',
 			'blocks-preview-base-field',
 			hasError && 'blocks-preview-base-field--error',
 			isInline && 'blocks-preview-base-field--inline',
