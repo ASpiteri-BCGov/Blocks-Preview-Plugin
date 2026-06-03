@@ -1055,7 +1055,10 @@ function scaffoldBlock( block ) {
 		path.join( blockDir, 'editor.scss' ),
 		generateEditorScss( block )
 	);
-	writeFile( path.join( blockDir, 'style.scss' ), '' );
+	writeFile(
+		path.join( blockDir, 'style.scss' ),
+		'/* Front-end block styles (none required for this preview). */\n'
+	);
 	return true;
 }
 

@@ -4,6 +4,7 @@
 	display: flex;
 	gap: 8px;
 }
+
 .blocks-preview-circular-option-picker-block__option {
 	padding: 0;
 	border: 2px solid transparent;
@@ -11,6 +12,7 @@
 	background: none;
 	cursor: pointer;
 }
+
 .blocks-preview-circular-option-picker-block__option.is-selected {
 	border-color: #3858e9;
 }
