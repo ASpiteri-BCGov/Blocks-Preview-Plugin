@@ -1,0 +1,20 @@
+{
+	"name": "bcgov-plugin/blocks-preview-plugin",
+	"description": "Blocks Preview Plugin",
+	"type": "wordpress-plugin",
+	"license": "Apache-2.0",
+	"scripts": {
+		"lint-php": "vendor/bin/phpcs",
+		"fix-php": "vendor/bin/phpcbf"
+	},
+	"require-dev": {
+		"wp-coding-standards/wpcs": "^3.3",
+		"phpcompatibility/phpcompatibility-wp": "^2.1",
+		"dealerdirect/phpcodesniffer-composer-installer": "^1.0"
+	},
+	"config": {
+		"allow-plugins": {
+			"dealerdirect/phpcodesniffer-composer-installer": true
+		}
+	}
+}
