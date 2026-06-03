@@ -62,6 +62,56 @@ WordPress blocks that preview [@wordpress/components](https://developer.wordpres
 | Query Controls | [QueryControls](https://developer.wordpress.org/block-editor/reference-guides/components/query-controls/) |
 | Radio Control | [RadioControl](https://developer.wordpress.org/block-editor/reference-guides/components/radio-control/) |
 | Range Control | [RangeControl](https://developer.wordpress.org/block-editor/reference-guides/components/range-control/) |
+| Badge | [Badge](https://developer.wordpress.org/block-editor/reference-guides/components/badge/) |
+| Calendar | [DateCalendar](https://developer.wordpress.org/block-editor/reference-guides/components/calendar/) |
+| Circular Option Picker | [CircularOptionPicker](https://developer.wordpress.org/block-editor/reference-guides/components/circular-option-picker/) |
+| Composite | [Composite](https://developer.wordpress.org/block-editor/reference-guides/components/composite/) |
+| Confirm Dialog | [ConfirmDialog](https://developer.wordpress.org/block-editor/reference-guides/components/confirm-dialog/) |
+| Custom Select Control V2 | [CustomSelectControlV2](https://developer.wordpress.org/block-editor/reference-guides/components/custom-select-control-v2/) |
+| Divider | [Divider](https://developer.wordpress.org/block-editor/reference-guides/components/divider/) |
+| Focusable Iframe | [FocusableIframe](https://developer.wordpress.org/block-editor/reference-guides/components/focusable-iframe/) |
+| Form File Upload | [FormFileUpload](https://developer.wordpress.org/block-editor/reference-guides/components/form-file-upload/) |
+| Grid | [Grid](https://developer.wordpress.org/block-editor/reference-guides/components/grid/) |
+| Higher Order | [withNotices](https://developer.wordpress.org/block-editor/reference-guides/components/higher-order/) |
+| Isolated Event Container | [IsolatedEventContainer](https://developer.wordpress.org/block-editor/reference-guides/components/isolated-event-container/) |
+| Item Group | [ItemGroup](https://developer.wordpress.org/block-editor/reference-guides/components/item-group/) |
+| Keyboard Shortcuts | [KeyboardShortcuts](https://developer.wordpress.org/block-editor/reference-guides/components/keyboard-shortcuts/) |
+| Menu | [DropdownMenu](https://developer.wordpress.org/block-editor/reference-guides/components/menu/) |
+| Mobile | [ResponsiveWrapper](https://developer.wordpress.org/block-editor/reference-guides/components/mobile/) |
+| Number Control | [NumberControl](https://developer.wordpress.org/block-editor/reference-guides/components/number-control/) |
+| Radio Group | [RadioGroup](https://developer.wordpress.org/block-editor/reference-guides/components/radio-group/) |
+| Resizable Box | [ResizableBox](https://developer.wordpress.org/block-editor/reference-guides/components/resizable-box/) |
+| Responsive Wrapper | [ResponsiveWrapper](https://developer.wordpress.org/block-editor/reference-guides/components/responsive-wrapper/) |
+| Sandbox | [SandBox](https://developer.wordpress.org/block-editor/reference-guides/components/sandbox/) |
+| Scroll Lock | [ScrollLock](https://developer.wordpress.org/block-editor/reference-guides/components/scroll-lock/) |
+| Scrollable | [Scrollable](https://developer.wordpress.org/block-editor/reference-guides/components/scrollable/) |
+| Search Control | [SearchControl](https://developer.wordpress.org/block-editor/reference-guides/components/search-control/) |
+| Select Control | [SelectControl](https://developer.wordpress.org/block-editor/reference-guides/components/select-control/) |
+| Slot Fill | [SlotFillProvider](https://developer.wordpress.org/block-editor/reference-guides/components/slot-fill/) |
+| Snackbar | [SnackbarList](https://developer.wordpress.org/block-editor/reference-guides/components/snackbar/) |
+| Spacer | [Spacer](https://developer.wordpress.org/block-editor/reference-guides/components/spacer/) |
+| Spinner | [Spinner](https://developer.wordpress.org/block-editor/reference-guides/components/spinner/) |
+| Surface | [Surface](https://developer.wordpress.org/block-editor/reference-guides/components/surface/) |
+| Tab Panel | [TabPanel](https://developer.wordpress.org/block-editor/reference-guides/components/tab-panel/) |
+| Tabs | [TabPanel](https://developer.wordpress.org/block-editor/reference-guides/components/tabs/) |
+| Text | [Text](https://developer.wordpress.org/block-editor/reference-guides/components/text/) |
+| Text Control | [TextControl](https://developer.wordpress.org/block-editor/reference-guides/components/text-control/) |
+| Text Highlight | [TextHighlight](https://developer.wordpress.org/block-editor/reference-guides/components/text-highlight/) |
+| Textarea Control | [TextareaControl](https://developer.wordpress.org/block-editor/reference-guides/components/textarea-control/) |
+| Theme | [StyleProvider](https://developer.wordpress.org/block-editor/reference-guides/components/theme/) |
+| Toggle Control | [ToggleControl](https://developer.wordpress.org/block-editor/reference-guides/components/toggle-control/) |
+| Toggle Group Control | [ToggleGroupControl](https://developer.wordpress.org/block-editor/reference-guides/components/toggle-group-control/) |
+| Toolbar | [Toolbar](https://developer.wordpress.org/block-editor/reference-guides/components/toolbar/) |
+| Tools Panel | [ToolsPanel](https://developer.wordpress.org/block-editor/reference-guides/components/tools-panel/) |
+| Tooltip | [Tooltip](https://developer.wordpress.org/block-editor/reference-guides/components/tooltip/) |
+| Tree Grid | [TreeGrid](https://developer.wordpress.org/block-editor/reference-guides/components/tree-grid/) |
+| Tree Select | [TreeSelect](https://developer.wordpress.org/block-editor/reference-guides/components/tree-select/) |
+| Truncate | [Truncate](https://developer.wordpress.org/block-editor/reference-guides/components/truncate/) |
+| Unit Control | [UnitControl](https://developer.wordpress.org/block-editor/reference-guides/components/unit-control/) |
+| V Stack | [VStack](https://developer.wordpress.org/block-editor/reference-guides/components/v-stack/) |
+| View | [View](https://developer.wordpress.org/block-editor/reference-guides/components/view/) |
+| Visually Hidden | [VisuallyHidden](https://developer.wordpress.org/block-editor/reference-guides/components/visually-hidden/) |
+| Z Stack | [ZStack](https://developer.wordpress.org/block-editor/reference-guides/components/z-stack/) |
 
 Component **description**, **documentation** URL, **experimental**, and **deprecated** flags live in one file: [`src/components-config.json`](src/components-config.json). Blocks merge that config in the editor (JS) and at registration (PHP) so the inserter and sidebar stay in sync.
 

@@ -1,0 +1,31 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "blocks-preview/search-control",
+	"version": "0.1.0",
+	"title": "Search Control",
+	"category": "blocks-preview",
+	"icon": "search",
+	"example": {},
+	"attributes": {
+		"label": {
+			"type": "string",
+			"default": "Search"
+		},
+		"value": {
+			"type": "string",
+			"default": ""
+		},
+		"placeholder": {
+			"type": "string",
+			"default": "Search items…"
+		}
+	},
+	"supports": {
+		"html": false
+	},
+	"textdomain": "blocks-preview",
+	"editorScript": "file:./index.js",
+	"editorStyle": "file:./index.css",
+	"style": "file:./style-index.css"
+}

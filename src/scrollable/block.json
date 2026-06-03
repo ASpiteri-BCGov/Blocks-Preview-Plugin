@@ -1,0 +1,23 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "blocks-preview/scrollable",
+	"version": "0.1.0",
+	"title": "Scrollable",
+	"category": "blocks-preview",
+	"icon": "editor-expand",
+	"example": {},
+	"attributes": {
+		"content": {
+			"type": "string",
+			"default": "Long scrollable content line."
+		}
+	},
+	"supports": {
+		"html": false
+	},
+	"textdomain": "blocks-preview",
+	"editorScript": "file:./index.js",
+	"editorStyle": "file:./index.css",
+	"style": "file:./style-index.css"
+}

@@ -1,0 +1,31 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "blocks-preview/responsive-wrapper",
+	"version": "0.1.0",
+	"title": "Responsive Wrapper",
+	"category": "blocks-preview",
+	"icon": "desktop",
+	"example": {},
+	"attributes": {
+		"naturalWidth": {
+			"type": "number",
+			"default": 16
+		},
+		"naturalHeight": {
+			"type": "number",
+			"default": 9
+		},
+		"content": {
+			"type": "string",
+			"default": "16:9 responsive content"
+		}
+	},
+	"supports": {
+		"html": false
+	},
+	"textdomain": "blocks-preview",
+	"editorScript": "file:./index.js",
+	"editorStyle": "file:./index.css",
+	"style": "file:./style-index.css"
+}

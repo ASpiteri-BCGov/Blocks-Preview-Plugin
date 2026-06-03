@@ -1,0 +1,31 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "blocks-preview/tools-panel",
+	"version": "0.1.0",
+	"title": "Tools Panel",
+	"category": "blocks-preview",
+	"icon": "admin-settings",
+	"example": {},
+	"attributes": {
+		"panelLabel": {
+			"type": "string",
+			"default": "Settings"
+		},
+		"itemLabel": {
+			"type": "string",
+			"default": "Sample setting"
+		},
+		"itemValue": {
+			"type": "string",
+			"default": "Value"
+		}
+	},
+	"supports": {
+		"html": false
+	},
+	"textdomain": "blocks-preview",
+	"editorScript": "file:./index.js",
+	"editorStyle": "file:./index.css",
+	"style": "file:./style-index.css"
+}

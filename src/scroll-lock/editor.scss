@@ -1,0 +1,8 @@
+@import '../shared/editor';
+
+.blocks-preview-scroll-lock-block__scrollable {
+	max-height: 120px;
+	overflow: auto;
+	padding: 8px;
+	border: 1px solid #ddd;
+}
