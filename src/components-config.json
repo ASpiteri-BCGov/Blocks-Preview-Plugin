@@ -336,5 +336,305 @@
 		"deprecated": false,
 		"description": "RangeControl lets users select a numeric value within a range using a slider.",
 		"documentation": "https://developer.wordpress.org/block-editor/reference-guides/components/range-control/"
+	},
+	"badge": {
+		"experimental": true,
+		"deprecated": false,
+		"description": "Badge displays a compact label for status, counts, or metadata alongside other UI.",
+		"documentation": "https://developer.wordpress.org/block-editor/reference-guides/components/badge/"
+	},
+	"calendar": {
+		"experimental": false,
+		"deprecated": false,
+		"description": "Calendar components let users pick dates from a month grid or date range.",
+		"documentation": "https://developer.wordpress.org/block-editor/reference-guides/components/calendar/"
+	},
+	"circular-option-picker": {
+		"experimental": true,
+		"deprecated": false,
+		"description": "CircularOptionPicker renders circular options, commonly used for color or style swatches.",
+		"documentation": "https://developer.wordpress.org/block-editor/reference-guides/components/circular-option-picker/"
+	},
+	"composite": {
+		"experimental": false,
+		"deprecated": false,
+		"description": "Composite provides roving tabindex and keyboard navigation for grouped interactive items.",
+		"documentation": "https://developer.wordpress.org/block-editor/reference-guides/components/composite/"
+	},
+	"confirm-dialog": {
+		"experimental": true,
+		"deprecated": false,
+		"description": "ConfirmDialog asks users to confirm or cancel a destructive or important action.",
+		"documentation": "https://developer.wordpress.org/block-editor/reference-guides/components/confirm-dialog/"
+	},
+	"custom-select-control-v2": {
+		"experimental": true,
+		"deprecated": false,
+		"description": "CustomSelectControlV2 is the underlying select implementation used by CustomSelectControl.",
+		"documentation": "https://developer.wordpress.org/block-editor/reference-guides/components/custom-select-control-v2/"
+	},
+	"divider": {
+		"experimental": true,
+		"deprecated": false,
+		"description": "Divider renders a horizontal or vertical rule to separate content sections.",
+		"documentation": "https://developer.wordpress.org/block-editor/reference-guides/components/divider/"
+	},
+	"focusable-iframe": {
+		"experimental": false,
+		"deprecated": false,
+		"description": "FocusableIframe renders an iframe that can receive keyboard focus within the editor.",
+		"documentation": "https://developer.wordpress.org/block-editor/reference-guides/components/focusable-iframe/"
+	},
+	"form-file-upload": {
+		"experimental": false,
+		"deprecated": false,
+		"description": "FormFileUpload renders a button that opens a file picker for uploading files.",
+		"documentation": "https://developer.wordpress.org/block-editor/reference-guides/components/form-file-upload/"
+	},
+	"grid": {
+		"experimental": true,
+		"deprecated": false,
+		"description": "Grid is a layout component that arranges children in a responsive CSS grid.",
+		"documentation": "https://developer.wordpress.org/block-editor/reference-guides/components/grid/"
+	},
+	"higher-order": {
+		"experimental": false,
+		"deprecated": false,
+		"description": "Higher-order components are utility wrappers (for example withNotices) rather than visual UI on their own.",
+		"documentation": "https://developer.wordpress.org/block-editor/reference-guides/components/higher-order/"
+	},
+	"isolated-event-container": {
+		"experimental": false,
+		"deprecated": false,
+		"description": "IsolatedEventContainer stops event propagation from its children to parent handlers.",
+		"documentation": "https://developer.wordpress.org/block-editor/reference-guides/components/isolated-event-container/"
+	},
+	"item-group": {
+		"experimental": true,
+		"deprecated": false,
+		"description": "ItemGroup groups related Item components with consistent spacing and semantics.",
+		"documentation": "https://developer.wordpress.org/block-editor/reference-guides/components/item-group/"
+	},
+	"keyboard-shortcuts": {
+		"experimental": false,
+		"deprecated": false,
+		"description": "KeyboardShortcuts registers keyboard shortcuts and displays them in a help dialog.",
+		"documentation": "https://developer.wordpress.org/block-editor/reference-guides/components/keyboard-shortcuts/"
+	},
+	"menu": {
+		"experimental": false,
+		"deprecated": false,
+		"description": "Menu patterns combine menu containers and items for actionable lists.",
+		"documentation": "https://developer.wordpress.org/block-editor/reference-guides/components/menu/"
+	},
+	"mobile": {
+		"experimental": false,
+		"deprecated": false,
+		"description": "Mobile preview patterns use ResponsiveWrapper to simulate constrained viewports.",
+		"documentation": "https://developer.wordpress.org/block-editor/reference-guides/components/mobile/"
+	},
+	"number-control": {
+		"experimental": true,
+		"deprecated": false,
+		"description": "NumberControl lets users enter numeric values with optional spin buttons and constraints.",
+		"documentation": "https://developer.wordpress.org/block-editor/reference-guides/components/number-control/"
+	},
+	"radio-group": {
+		"experimental": true,
+		"deprecated": false,
+		"description": "RadioGroup renders a set of radio inputs for selecting a single option.",
+		"documentation": "https://developer.wordpress.org/block-editor/reference-guides/components/radio-group/"
+	},
+	"resizable-box": {
+		"experimental": false,
+		"deprecated": false,
+		"description": "ResizableBox wraps content in a box that users can resize by dragging handles.",
+		"documentation": "https://developer.wordpress.org/block-editor/reference-guides/components/resizable-box/"
+	},
+	"responsive-wrapper": {
+		"experimental": false,
+		"deprecated": false,
+		"description": "ResponsiveWrapper scales embedded content to fit its container while preserving aspect ratio.",
+		"documentation": "https://developer.wordpress.org/block-editor/reference-guides/components/responsive-wrapper/"
+	},
+	"sandbox": {
+		"experimental": false,
+		"deprecated": false,
+		"description": "SandBox safely renders HTML in an isolated iframe for previews and embeds.",
+		"documentation": "https://developer.wordpress.org/block-editor/reference-guides/components/sandbox/"
+	},
+	"scroll-lock": {
+		"experimental": false,
+		"deprecated": false,
+		"description": "ScrollLock prevents background scrolling while overlays or modals are open.",
+		"documentation": "https://developer.wordpress.org/block-editor/reference-guides/components/scroll-lock/"
+	},
+	"scrollable": {
+		"experimental": true,
+		"deprecated": false,
+		"description": "Scrollable wraps content in a scrollable region with consistent styling.",
+		"documentation": "https://developer.wordpress.org/block-editor/reference-guides/components/scrollable/"
+	},
+	"search-control": {
+		"experimental": false,
+		"deprecated": false,
+		"description": "SearchControl provides a search input field with optional label and help text.",
+		"documentation": "https://developer.wordpress.org/block-editor/reference-guides/components/search-control/"
+	},
+	"select-control": {
+		"experimental": false,
+		"deprecated": false,
+		"description": "SelectControl renders a native-style select dropdown for choosing one option.",
+		"documentation": "https://developer.wordpress.org/block-editor/reference-guides/components/select-control/"
+	},
+	"slot-fill": {
+		"experimental": false,
+		"deprecated": false,
+		"description": "Slot and Fill let distant components share UI regions via a provider pattern.",
+		"documentation": "https://developer.wordpress.org/block-editor/reference-guides/components/slot-fill/"
+	},
+	"snackbar": {
+		"experimental": false,
+		"deprecated": false,
+		"description": "Snackbar and SnackbarList display brief, dismissible messages at the bottom of the screen.",
+		"documentation": "https://developer.wordpress.org/block-editor/reference-guides/components/snackbar/"
+	},
+	"spacer": {
+		"experimental": true,
+		"deprecated": false,
+		"description": "Spacer adds consistent whitespace between layout elements.",
+		"documentation": "https://developer.wordpress.org/block-editor/reference-guides/components/spacer/"
+	},
+	"spinner": {
+		"experimental": false,
+		"deprecated": false,
+		"description": "Spinner indicates loading or processing state with an animated icon.",
+		"documentation": "https://developer.wordpress.org/block-editor/reference-guides/components/spinner/"
+	},
+	"surface": {
+		"experimental": true,
+		"deprecated": false,
+		"description": "Surface provides a styled container background for grouped content.",
+		"documentation": "https://developer.wordpress.org/block-editor/reference-guides/components/surface/"
+	},
+	"tab-panel": {
+		"experimental": false,
+		"deprecated": false,
+		"description": "TabPanel renders a tabbed interface where each tab shows different content.",
+		"documentation": "https://developer.wordpress.org/block-editor/reference-guides/components/tab-panel/"
+	},
+	"tabs": {
+		"experimental": false,
+		"deprecated": false,
+		"description": "Tabs organize related content into selectable panels with shared navigation.",
+		"documentation": "https://developer.wordpress.org/block-editor/reference-guides/components/tabs/"
+	},
+	"text": {
+		"experimental": true,
+		"deprecated": false,
+		"description": "Text renders typography with consistent sizing, weight, and color tokens.",
+		"documentation": "https://developer.wordpress.org/block-editor/reference-guides/components/text/"
+	},
+	"text-control": {
+		"experimental": false,
+		"deprecated": false,
+		"description": "TextControl is a single-line text input with label and help text.",
+		"documentation": "https://developer.wordpress.org/block-editor/reference-guides/components/text-control/"
+	},
+	"text-highlight": {
+		"experimental": false,
+		"deprecated": false,
+		"description": "TextHighlight emphasizes matching substrings within a larger text value.",
+		"documentation": "https://developer.wordpress.org/block-editor/reference-guides/components/text-highlight/"
+	},
+	"textarea-control": {
+		"experimental": false,
+		"deprecated": false,
+		"description": "TextareaControl is a multi-line text input for longer content.",
+		"documentation": "https://developer.wordpress.org/block-editor/reference-guides/components/textarea-control/"
+	},
+	"theme": {
+		"experimental": true,
+		"deprecated": false,
+		"description": "Theme and StyleProvider supply design tokens and scoped styles to child components.",
+		"documentation": "https://developer.wordpress.org/block-editor/reference-guides/components/theme/"
+	},
+	"toggle-control": {
+		"experimental": false,
+		"deprecated": false,
+		"description": "ToggleControl combines a FormToggle with a label for boolean settings.",
+		"documentation": "https://developer.wordpress.org/block-editor/reference-guides/components/toggle-control/"
+	},
+	"toggle-group-control": {
+		"experimental": true,
+		"deprecated": false,
+		"description": "ToggleGroupControl replaces ButtonGroup with accessible segmented toggle options.",
+		"documentation": "https://developer.wordpress.org/block-editor/reference-guides/components/toggle-group-control/"
+	},
+	"toolbar": {
+		"experimental": false,
+		"deprecated": false,
+		"description": "Toolbar groups ToolbarButton and ToolbarGroup controls for rich editing interfaces.",
+		"documentation": "https://developer.wordpress.org/block-editor/reference-guides/components/toolbar/"
+	},
+	"tools-panel": {
+		"experimental": true,
+		"deprecated": false,
+		"description": "ToolsPanel organizes block settings into collapsible panel sections with reset support.",
+		"documentation": "https://developer.wordpress.org/block-editor/reference-guides/components/tools-panel/"
+	},
+	"tooltip": {
+		"experimental": false,
+		"deprecated": false,
+		"description": "Tooltip displays supplementary information when hovering or focusing an element.",
+		"documentation": "https://developer.wordpress.org/block-editor/reference-guides/components/tooltip/"
+	},
+	"tree-grid": {
+		"experimental": true,
+		"deprecated": false,
+		"description": "TreeGrid renders hierarchical data in an accessible grid with keyboard navigation.",
+		"documentation": "https://developer.wordpress.org/block-editor/reference-guides/components/tree-grid/"
+	},
+	"tree-select": {
+		"experimental": false,
+		"deprecated": false,
+		"description": "TreeSelect displays hierarchical options in a select control with indentation.",
+		"documentation": "https://developer.wordpress.org/block-editor/reference-guides/components/tree-select/"
+	},
+	"truncate": {
+		"experimental": true,
+		"deprecated": false,
+		"description": "Truncate ellipsizes overflowing text while preserving readable typography.",
+		"documentation": "https://developer.wordpress.org/block-editor/reference-guides/components/truncate/"
+	},
+	"unit-control": {
+		"experimental": true,
+		"deprecated": false,
+		"description": "UnitControl combines a numeric input with unit selection (px, em, rem, etc.).",
+		"documentation": "https://developer.wordpress.org/block-editor/reference-guides/components/unit-control/"
+	},
+	"v-stack": {
+		"experimental": true,
+		"deprecated": false,
+		"description": "VStack arranges children vertically with consistent spacing.",
+		"documentation": "https://developer.wordpress.org/block-editor/reference-guides/components/v-stack/"
+	},
+	"view": {
+		"experimental": true,
+		"deprecated": false,
+		"description": "View is a primitive layout component for spacing, alignment, and display styles.",
+		"documentation": "https://developer.wordpress.org/block-editor/reference-guides/components/view/"
+	},
+	"visually-hidden": {
+		"experimental": false,
+		"deprecated": false,
+		"description": "VisuallyHidden hides content visually while keeping it available to assistive technology.",
+		"documentation": "https://developer.wordpress.org/block-editor/reference-guides/components/visually-hidden/"
+	},
+	"z-stack": {
+		"experimental": true,
+		"deprecated": false,
+		"description": "ZStack layers children along the z-axis with offset positioning.",
+		"documentation": "https://developer.wordpress.org/block-editor/reference-guides/components/z-stack/"
 	}
 }

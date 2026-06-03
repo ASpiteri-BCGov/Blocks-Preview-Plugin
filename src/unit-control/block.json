@@ -1,0 +1,27 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "blocks-preview/unit-control",
+	"version": "0.1.0",
+	"title": "Unit Control",
+	"category": "blocks-preview",
+	"icon": "editor-code",
+	"example": {},
+	"attributes": {
+		"label": {
+			"type": "string",
+			"default": "Width"
+		},
+		"value": {
+			"type": "string",
+			"default": "100px"
+		}
+	},
+	"supports": {
+		"html": false
+	},
+	"textdomain": "blocks-preview",
+	"editorScript": "file:./index.js",
+	"editorStyle": "file:./index.css",
+	"style": "file:./style-index.css"
+}

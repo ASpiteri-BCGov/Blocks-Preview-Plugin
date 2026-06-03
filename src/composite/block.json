@@ -1,0 +1,27 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "blocks-preview/composite",
+	"version": "0.1.0",
+	"title": "Composite",
+	"category": "blocks-preview",
+	"icon": "grid-view",
+	"example": {},
+	"attributes": {
+		"item1": {
+			"type": "string",
+			"default": "First item"
+		},
+		"item2": {
+			"type": "string",
+			"default": "Second item"
+		}
+	},
+	"supports": {
+		"html": false
+	},
+	"textdomain": "blocks-preview",
+	"editorScript": "file:./index.js",
+	"editorStyle": "file:./index.css",
+	"style": "file:./style-index.css"
+}

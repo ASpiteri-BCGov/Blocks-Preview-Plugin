@@ -1,0 +1,35 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "blocks-preview/tab-panel",
+	"version": "0.1.0",
+	"title": "Tab Panel",
+	"category": "blocks-preview",
+	"icon": "table-col-after",
+	"example": {},
+	"attributes": {
+		"tab1Label": {
+			"type": "string",
+			"default": "General"
+		},
+		"tab2Label": {
+			"type": "string",
+			"default": "Advanced"
+		},
+		"tab1Content": {
+			"type": "string",
+			"default": "General tab content."
+		},
+		"tab2Content": {
+			"type": "string",
+			"default": "Advanced tab content."
+		}
+	},
+	"supports": {
+		"html": false
+	},
+	"textdomain": "blocks-preview",
+	"editorScript": "file:./index.js",
+	"editorStyle": "file:./index.css",
+	"style": "file:./style-index.css"
+}

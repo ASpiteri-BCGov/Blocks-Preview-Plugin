@@ -1,0 +1,29 @@
+@import '../shared/editor';
+
+.blocks-preview-badge-block__badge {
+	display: inline-block;
+	padding: 2px 8px;
+	border-radius: 999px;
+	background: #f0f0f0;
+	font-size: 12px;
+}
+
+.blocks-preview-badge-block__badge.is-info {
+	background: #e5f5fa;
+	color: #007cba;
+}
+
+.blocks-preview-badge-block__badge.is-success {
+	background: #edfaef;
+	color: #008a20;
+}
+
+.blocks-preview-badge-block__badge.is-warning {
+	background: #fcf9e8;
+	color: #996800;
+}
+
+.blocks-preview-badge-block__badge.is-error {
+	background: #fcebea;
+	color: #cc1818;
+}

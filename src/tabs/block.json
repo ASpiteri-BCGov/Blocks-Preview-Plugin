@@ -1,0 +1,35 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "blocks-preview/tabs",
+	"version": "0.1.0",
+	"title": "Tabs",
+	"category": "blocks-preview",
+	"icon": "table-col-before",
+	"example": {},
+	"attributes": {
+		"tab1Label": {
+			"type": "string",
+			"default": "Overview"
+		},
+		"tab2Label": {
+			"type": "string",
+			"default": "Details"
+		},
+		"tab1Content": {
+			"type": "string",
+			"default": "Overview tab content."
+		},
+		"tab2Content": {
+			"type": "string",
+			"default": "Details tab content."
+		}
+	},
+	"supports": {
+		"html": false
+	},
+	"textdomain": "blocks-preview",
+	"editorScript": "file:./index.js",
+	"editorStyle": "file:./index.css",
+	"style": "file:./style-index.css"
+}

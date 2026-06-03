@@ -57,9 +57,7 @@ export default function Edit( { attributes, setAttributes } ) {
 					onChange={ ( nextValue ) =>
 						setAttributes( {
 							value:
-								typeof nextValue === 'number'
-									? nextValue
-									: 0,
+								typeof nextValue === 'number' ? nextValue : 0,
 						} )
 					}
 					min={ 0 }

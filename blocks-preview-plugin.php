@@ -3,7 +3,7 @@
  * Plugin Name:       Blocks Preview
  * Plugin URI:        https://github.com/aspiteri/Blocks-Preview-Plugin
  * Description:       Preview WordPress block editor components as blocks.
- * Version:           0.4.0
+ * Version:           0.5.0
  * Requires at least: 6.5
  * Requires PHP:      7.4
  * Author:            aspiteri
@@ -78,6 +78,56 @@ const BLOCKS_PREVIEW_BLOCK_SLUGS = array(
 	'query-controls',
 	'radio-control',
 	'range-control',
+	'badge',
+	'calendar',
+	'circular-option-picker',
+	'composite',
+	'confirm-dialog',
+	'custom-select-control-v2',
+	'divider',
+	'focusable-iframe',
+	'form-file-upload',
+	'grid',
+	'higher-order',
+	'isolated-event-container',
+	'item-group',
+	'keyboard-shortcuts',
+	'menu',
+	'mobile',
+	'number-control',
+	'radio-group',
+	'resizable-box',
+	'responsive-wrapper',
+	'sandbox',
+	'scroll-lock',
+	'scrollable',
+	'search-control',
+	'select-control',
+	'slot-fill',
+	'snackbar',
+	'spacer',
+	'spinner',
+	'surface',
+	'tab-panel',
+	'tabs',
+	'text',
+	'text-control',
+	'text-highlight',
+	'textarea-control',
+	'theme',
+	'toggle-control',
+	'toggle-group-control',
+	'toolbar',
+	'tools-panel',
+	'tooltip',
+	'tree-grid',
+	'tree-select',
+	'truncate',
+	'unit-control',
+	'v-stack',
+	'view',
+	'visually-hidden',
+	'z-stack',
 );
 
 /**
