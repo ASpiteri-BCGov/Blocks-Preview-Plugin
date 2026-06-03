@@ -42,6 +42,26 @@ WordPress blocks that preview [@wordpress/components](https://developer.wordpres
 | Form Toggle | [FormToggle](https://developer.wordpress.org/block-editor/reference-guides/components/form-toggle/) |
 | Form Token Field | [FormTokenField](https://developer.wordpress.org/block-editor/reference-guides/components/form-token-field/) |
 | Gradient Picker | [GradientPicker](https://developer.wordpress.org/block-editor/reference-guides/components/gradient-picker/) |
+| Guide | [Guide](https://developer.wordpress.org/block-editor/reference-guides/components/guide/) |
+| Heading | [Heading](https://developer.wordpress.org/block-editor/reference-guides/components/heading/) |
+| H Stack | [HStack](https://developer.wordpress.org/block-editor/reference-guides/components/h-stack/) |
+| Icon | [Icon](https://developer.wordpress.org/block-editor/reference-guides/components/icon/) |
+| Input Control | [InputControl](https://developer.wordpress.org/block-editor/reference-guides/components/input-control/) |
+| Menu Group | [MenuGroup](https://developer.wordpress.org/block-editor/reference-guides/components/menu-group/) |
+| Menu Item | [MenuItem](https://developer.wordpress.org/block-editor/reference-guides/components/menu-item/) |
+| Menu Items Choice | [MenuItemsChoice](https://developer.wordpress.org/block-editor/reference-guides/components/menu-items-choice/) |
+| Modal | [Modal](https://developer.wordpress.org/block-editor/reference-guides/components/modal/) |
+| Navigable Menu | [NavigableMenu](https://developer.wordpress.org/block-editor/reference-guides/components/navigable-menu/) |
+| Navigator | [Navigator](https://developer.wordpress.org/block-editor/reference-guides/components/navigator/) |
+| Notice | [Notice](https://developer.wordpress.org/block-editor/reference-guides/components/notice/) |
+| Notice List | [NoticeList](https://developer.wordpress.org/block-editor/reference-guides/components/notice-list/) |
+| Panel | [Panel](https://developer.wordpress.org/block-editor/reference-guides/components/panel/) |
+| Placeholder | [Placeholder](https://developer.wordpress.org/block-editor/reference-guides/components/placeholder/) |
+| Popover | [Popover](https://developer.wordpress.org/block-editor/reference-guides/components/popover/) |
+| Progress Bar | [ProgressBar](https://developer.wordpress.org/block-editor/reference-guides/components/progress-bar/) |
+| Query Controls | [QueryControls](https://developer.wordpress.org/block-editor/reference-guides/components/query-controls/) |
+| Radio Control | [RadioControl](https://developer.wordpress.org/block-editor/reference-guides/components/radio-control/) |
+| Range Control | [RangeControl](https://developer.wordpress.org/block-editor/reference-guides/components/range-control/) |
 
 Component **description**, **documentation** URL, **experimental**, and **deprecated** flags live in one file: [`src/components-config.json`](src/components-config.json). Blocks merge that config in the editor (JS) and at registration (PHP) so the inserter and sidebar stay in sync.
 

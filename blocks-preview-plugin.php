@@ -3,7 +3,7 @@
  * Plugin Name:       Blocks Preview
  * Plugin URI:        https://github.com/aspiteri/Blocks-Preview-Plugin
  * Description:       Preview WordPress block editor components as blocks.
- * Version:           0.3.0
+ * Version:           0.4.0
  * Requires at least: 6.5
  * Requires PHP:      7.4
  * Author:            aspiteri
@@ -58,6 +58,26 @@ const BLOCKS_PREVIEW_BLOCK_SLUGS = array(
 	'form-toggle',
 	'form-token-field',
 	'gradient-picker',
+	'guide',
+	'heading',
+	'h-stack',
+	'icon',
+	'input-control',
+	'menu-group',
+	'menu-item',
+	'menu-items-choice',
+	'modal',
+	'navigable-menu',
+	'navigator',
+	'notice',
+	'notice-list',
+	'panel',
+	'placeholder',
+	'popover',
+	'progress-bar',
+	'query-controls',
+	'radio-control',
+	'range-control',
 );
 
 /**

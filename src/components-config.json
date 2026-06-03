@@ -216,5 +216,125 @@
 		"deprecated": false,
 		"description": "GradientPicker allows users to pick a gradient from a predefined set or create a custom gradient.",
 		"documentation": "https://developer.wordpress.org/block-editor/reference-guides/components/gradient-picker/"
+	},
+	"guide": {
+		"experimental": false,
+		"deprecated": false,
+		"description": "Guide is a React component that displays user tips in a stepped sequence, using GuidePage for each step.",
+		"documentation": "https://developer.wordpress.org/block-editor/reference-guides/components/guide/"
+	},
+	"heading": {
+		"experimental": false,
+		"deprecated": false,
+		"description": "Heading renders semantic heading text with consistent typography styles for a given level.",
+		"documentation": "https://developer.wordpress.org/block-editor/reference-guides/components/heading/"
+	},
+	"h-stack": {
+		"experimental": false,
+		"deprecated": false,
+		"description": "HStack is a horizontal layout component that arranges children in a row with consistent spacing.",
+		"documentation": "https://developer.wordpress.org/block-editor/reference-guides/components/h-stack/"
+	},
+	"icon": {
+		"experimental": false,
+		"deprecated": false,
+		"description": "Icon renders an SVG icon from the WordPress icons library with consistent sizing.",
+		"documentation": "https://developer.wordpress.org/block-editor/reference-guides/components/icon/"
+	},
+	"input-control": {
+		"experimental": false,
+		"deprecated": false,
+		"description": "InputControl is a text input component with built-in label, help, and error handling.",
+		"documentation": "https://developer.wordpress.org/block-editor/reference-guides/components/input-control/"
+	},
+	"menu-group": {
+		"experimental": false,
+		"deprecated": false,
+		"description": "MenuGroup groups related MenuItem components under a shared label in a menu.",
+		"documentation": "https://developer.wordpress.org/block-editor/reference-guides/components/menu-group/"
+	},
+	"menu-item": {
+		"experimental": false,
+		"deprecated": false,
+		"description": "MenuItem represents a single actionable item within a menu or menu group.",
+		"documentation": "https://developer.wordpress.org/block-editor/reference-guides/components/menu-item/"
+	},
+	"menu-items-choice": {
+		"experimental": false,
+		"deprecated": false,
+		"description": "MenuItemsChoice renders a set of mutually exclusive (or multiple) choices inside a menu.",
+		"documentation": "https://developer.wordpress.org/block-editor/reference-guides/components/menu-items-choice/"
+	},
+	"modal": {
+		"experimental": false,
+		"deprecated": false,
+		"description": "Modal displays content in an overlay dialog that traps focus until dismissed.",
+		"documentation": "https://developer.wordpress.org/block-editor/reference-guides/components/modal/"
+	},
+	"navigable-menu": {
+		"experimental": false,
+		"deprecated": false,
+		"description": "NavigableMenu is a menu container that supports keyboard navigation between items.",
+		"documentation": "https://developer.wordpress.org/block-editor/reference-guides/components/navigable-menu/"
+	},
+	"navigator": {
+		"experimental": false,
+		"deprecated": false,
+		"description": "Navigator provides a stack-based navigation pattern with screens and transitions between views.",
+		"documentation": "https://developer.wordpress.org/block-editor/reference-guides/components/navigator/"
+	},
+	"notice": {
+		"experimental": false,
+		"deprecated": false,
+		"description": "Notice displays a dismissible admin-style message with status variants (success, warning, error, info).",
+		"documentation": "https://developer.wordpress.org/block-editor/reference-guides/components/notice/"
+	},
+	"notice-list": {
+		"experimental": false,
+		"deprecated": false,
+		"description": "NoticeList renders a collection of Notice components with shared remove handling.",
+		"documentation": "https://developer.wordpress.org/block-editor/reference-guides/components/notice-list/"
+	},
+	"panel": {
+		"experimental": false,
+		"deprecated": false,
+		"description": "Panel is a container for grouped settings UI, typically composed of PanelBody and PanelRow children.",
+		"documentation": "https://developer.wordpress.org/block-editor/reference-guides/components/panel/"
+	},
+	"placeholder": {
+		"experimental": false,
+		"deprecated": false,
+		"description": "Placeholder renders an empty-state container with icon, label, and instructions for setup flows.",
+		"documentation": "https://developer.wordpress.org/block-editor/reference-guides/components/placeholder/"
+	},
+	"popover": {
+		"experimental": false,
+		"deprecated": false,
+		"description": "Popover displays floating content anchored to a trigger element, such as a button.",
+		"documentation": "https://developer.wordpress.org/block-editor/reference-guides/components/popover/"
+	},
+	"progress-bar": {
+		"experimental": false,
+		"deprecated": false,
+		"description": "ProgressBar displays progress toward completion as a horizontal bar.",
+		"documentation": "https://developer.wordpress.org/block-editor/reference-guides/components/progress-bar/"
+	},
+	"query-controls": {
+		"experimental": false,
+		"deprecated": false,
+		"description": "QueryControls provides controls for ordering and sorting query results in block interfaces.",
+		"documentation": "https://developer.wordpress.org/block-editor/reference-guides/components/query-controls/"
+	},
+	"radio-control": {
+		"experimental": false,
+		"deprecated": false,
+		"description": "RadioControl allows users to select a single option from a set of radio buttons.",
+		"documentation": "https://developer.wordpress.org/block-editor/reference-guides/components/radio-control/"
+	},
+	"range-control": {
+		"experimental": false,
+		"deprecated": false,
+		"description": "RangeControl lets users select a numeric value within a range using a slider.",
+		"documentation": "https://developer.wordpress.org/block-editor/reference-guides/components/range-control/"
 	}
 }

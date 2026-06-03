@@ -1,0 +1,40 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "blocks-preview/menu-items-choice",
+	"version": "0.1.0",
+	"title": "Menu Items Choice",
+	"category": "blocks-preview",
+	"icon": "yes",
+	"example": {},
+	"attributes": {
+		"selected": {
+			"type": "string",
+			"default": "small"
+		},
+		"choices": {
+			"type": "array",
+			"default": [
+				{
+					"value": "small",
+					"label": "Small"
+				},
+				{
+					"value": "medium",
+					"label": "Medium"
+				},
+				{
+					"value": "large",
+					"label": "Large"
+				}
+			]
+		}
+	},
+	"supports": {
+		"html": false
+	},
+	"textdomain": "blocks-preview",
+	"editorScript": "file:./index.js",
+	"editorStyle": "file:./index.css",
+	"style": "file:./style-index.css"
+}
