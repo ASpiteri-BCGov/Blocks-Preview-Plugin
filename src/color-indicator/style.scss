@@ -1,0 +1,13 @@
+.blocks-preview-color-indicator-block__saved {
+	display: flex;
+	align-items: center;
+	gap: 8px;
+}
+
+.blocks-preview-color-indicator-block__swatch {
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	border-radius: 50%;
+	border: 1px solid rgba(0, 0, 0, 0.1);
+}

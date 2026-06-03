@@ -17,10 +17,7 @@ import {
 import blockJson from './block.json';
 
 const metadata = getComponentMetadata( 'box-control', blockJson );
-const BoxControl = resolveComponent(
-	'BoxControl',
-	'__experimentalBoxControl'
-);
+const BoxControl = resolveComponent( 'BoxControl', '__experimentalBoxControl' );
 
 /**
  * @param {import('@wordpress/blocks').BlockEditProps} props

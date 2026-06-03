@@ -65,5 +65,36 @@
 		"deprecatedReplacement": "ToggleGroupControl",
 		"description": "ButtonGroup can be used to group any related buttons together. To emphasize related buttons, a group should share a common container.",
 		"documentation": "https://developer.wordpress.org/block-editor/reference-guides/components/button-group/"
+	},
+	"card": {
+		"experimental": false,
+		"deprecated": false,
+		"description": "Card provides a flexible and extensible content container.",
+		"documentation": "https://developer.wordpress.org/block-editor/reference-guides/components/card/"
+	},
+	"checkbox-control": {
+		"experimental": false,
+		"deprecated": false,
+		"description": "Checkboxes allow the user to select one or more items from a set.",
+		"documentation": "https://developer.wordpress.org/block-editor/reference-guides/components/checkbox-control/"
+	},
+	"clipboard-button": {
+		"experimental": false,
+		"deprecated": true,
+		"deprecatedReplacement": "useCopyToClipboard",
+		"description": "With a clipboard button, users copy text (or other elements) with a single click or tap.",
+		"documentation": "https://developer.wordpress.org/block-editor/reference-guides/components/clipboard-button/"
+	},
+	"color-indicator": {
+		"experimental": false,
+		"deprecated": false,
+		"description": "ColorIndicator is a React component that renders a specific color in a circle. It's often used to summarize a collection of used colors in a child component.",
+		"documentation": "https://developer.wordpress.org/block-editor/reference-guides/components/color-indicator/"
+	},
+	"color-palette": {
+		"experimental": false,
+		"deprecated": false,
+		"description": "ColorPalette allows the user to pick a color from a list of pre-defined color entries.",
+		"documentation": "https://developer.wordpress.org/block-editor/reference-guides/components/color-palette/"
 	}
 }

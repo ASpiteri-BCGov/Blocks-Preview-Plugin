@@ -1,0 +1,31 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "blocks-preview/checkbox-control",
+	"version": "0.1.0",
+	"title": "Checkbox Control",
+	"category": "blocks-preview",
+	"icon": "yes",
+	"example": {},
+	"attributes": {
+		"label": {
+			"type": "string",
+			"default": "Is author"
+		},
+		"help": {
+			"type": "string",
+			"default": "Is the user an author or not?"
+		},
+		"checked": {
+			"type": "boolean",
+			"default": true
+		}
+	},
+	"supports": {
+		"html": false
+	},
+	"textdomain": "blocks-preview",
+	"editorScript": "file:./index.js",
+	"editorStyle": "file:./index.css",
+	"style": "file:./style-index.css"
+}

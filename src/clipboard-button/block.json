@@ -1,0 +1,27 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "blocks-preview/clipboard-button",
+	"version": "0.1.0",
+	"title": "Clipboard Button",
+	"category": "blocks-preview",
+	"icon": "clipboard",
+	"example": {},
+	"attributes": {
+		"text": {
+			"type": "string",
+			"default": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+		},
+		"buttonLabel": {
+			"type": "string",
+			"default": "Copy Text"
+		}
+	},
+	"supports": {
+		"html": false
+	},
+	"textdomain": "blocks-preview",
+	"editorScript": "file:./index.js",
+	"editorStyle": "file:./index.css",
+	"style": "file:./style-index.css"
+}
