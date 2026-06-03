@@ -1,0 +1,31 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "blocks-preview/disabled",
+	"version": "0.1.0",
+	"title": "Disabled",
+	"category": "blocks-preview",
+	"icon": "hidden",
+	"example": {},
+	"attributes": {
+		"isDisabled": {
+			"type": "boolean",
+			"default": true
+		},
+		"inputValue": {
+			"type": "string",
+			"default": "Disabled field value"
+		},
+		"inputLabel": {
+			"type": "string",
+			"default": "Sample field"
+		}
+	},
+	"supports": {
+		"html": false
+	},
+	"textdomain": "blocks-preview",
+	"editorScript": "file:./index.js",
+	"editorStyle": "file:./index.css",
+	"style": "file:./style-index.css"
+}

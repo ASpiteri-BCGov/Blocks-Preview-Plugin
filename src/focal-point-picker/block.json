@@ -1,0 +1,30 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "blocks-preview/focal-point-picker",
+	"version": "0.1.0",
+	"title": "Focal Point Picker",
+	"category": "blocks-preview",
+	"icon": "format-image",
+	"example": {},
+	"attributes": {
+		"url": {
+			"type": "string",
+			"default": "https://s.w.org/style/images/about/WordPress-logotype-wmark.png"
+		},
+		"focalPoint": {
+			"type": "object",
+			"default": {
+				"x": 0.5,
+				"y": 0.5
+			}
+		}
+	},
+	"supports": {
+		"html": false
+	},
+	"textdomain": "blocks-preview",
+	"editorScript": "file:./index.js",
+	"editorStyle": "file:./index.css",
+	"style": "file:./style-index.css"
+}

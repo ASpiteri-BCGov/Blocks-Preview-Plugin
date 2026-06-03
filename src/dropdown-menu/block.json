@@ -1,0 +1,23 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "blocks-preview/dropdown-menu",
+	"version": "0.1.0",
+	"title": "Dropdown Menu",
+	"category": "blocks-preview",
+	"icon": "menu",
+	"example": {},
+	"attributes": {
+		"label": {
+			"type": "string",
+			"default": "Actions"
+		}
+	},
+	"supports": {
+		"html": false
+	},
+	"textdomain": "blocks-preview",
+	"editorScript": "file:./index.js",
+	"editorStyle": "file:./index.css",
+	"style": "file:./style-index.css"
+}

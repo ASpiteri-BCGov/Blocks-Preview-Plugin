@@ -1,0 +1,10 @@
+@import '../shared/editor';
+
+.blocks-preview-draggable-block__handle {
+	display: inline-block;
+	padding: 8px 16px;
+	border: 1px dashed #949494;
+	border-radius: 2px;
+	cursor: grab;
+	background: #f0f0f0;
+}

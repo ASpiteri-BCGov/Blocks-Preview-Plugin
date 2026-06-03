@@ -96,5 +96,125 @@
 		"deprecated": false,
 		"description": "ColorPalette allows the user to pick a color from a list of pre-defined color entries.",
 		"documentation": "https://developer.wordpress.org/block-editor/reference-guides/components/color-palette/"
+	},
+	"color-picker": {
+		"experimental": false,
+		"deprecated": false,
+		"description": "ColorPicker is a color picking component based on react-colorful that lets you pick a color visually or by manipulating RGB(A), HSL(A), and hex values.",
+		"documentation": "https://developer.wordpress.org/block-editor/reference-guides/components/color-picker/"
+	},
+	"combobox-control": {
+		"experimental": false,
+		"deprecated": false,
+		"description": "ComboboxControl is an enhanced SelectControl with autocomplete/filtering, allowing users to choose from predefined options or enter a custom value.",
+		"documentation": "https://developer.wordpress.org/block-editor/reference-guides/components/combobox-control/"
+	},
+	"custom-gradient-picker": {
+		"experimental": false,
+		"deprecated": false,
+		"description": "CustomGradientPicker allows users to pick a gradient from a predefined set or create a custom one.",
+		"documentation": "https://developer.wordpress.org/block-editor/reference-guides/components/custom-gradient-picker/"
+	},
+	"custom-select-control": {
+		"experimental": false,
+		"deprecated": false,
+		"description": "CustomSelectControl allows selection of one or more items from a short list, using a custom select control with more flexible styling than SelectControl.",
+		"documentation": "https://developer.wordpress.org/block-editor/reference-guides/components/custom-select-control/"
+	},
+	"dashicon": {
+		"experimental": false,
+		"deprecated": false,
+		"description": "Dashicon displays a single Dashicon from the WordPress Dashicon set as an SVG icon.",
+		"documentation": "https://developer.wordpress.org/block-editor/reference-guides/components/dashicon/"
+	},
+	"date-time-picker": {
+		"experimental": false,
+		"deprecated": false,
+		"description": "DateTimePicker renders a combined date and time input for selecting a specific moment.",
+		"documentation": "https://developer.wordpress.org/block-editor/reference-guides/components/date-time-picker/"
+	},
+	"disabled": {
+		"experimental": false,
+		"deprecated": false,
+		"description": "Disabled is a wrapper component that disables pointer events and dims child elements when isDisabled is true.",
+		"documentation": "https://developer.wordpress.org/block-editor/reference-guides/components/disabled/"
+	},
+	"draggable": {
+		"experimental": false,
+		"deprecated": false,
+		"description": "Draggable is a Component that provides a way to set up a cross-browser (including touch) customizable draggable UI element.",
+		"documentation": "https://developer.wordpress.org/block-editor/reference-guides/components/draggable/"
+	},
+	"drop-zone": {
+		"experimental": false,
+		"deprecated": false,
+		"description": "DropZone is a React component that renders a drop zone for dragging and dropping files.",
+		"documentation": "https://developer.wordpress.org/block-editor/reference-guides/components/drop-zone/"
+	},
+	"dropdown": {
+		"experimental": false,
+		"deprecated": false,
+		"description": "Dropdown is a React component to render a dropdown menu, typically used to display a set of actions.",
+		"documentation": "https://developer.wordpress.org/block-editor/reference-guides/components/dropdown/"
+	},
+	"dropdown-menu": {
+		"experimental": false,
+		"deprecated": false,
+		"description": "DropdownMenu displays a list of actions in a dropdown menu, triggered by a button.",
+		"documentation": "https://developer.wordpress.org/block-editor/reference-guides/components/dropdown-menu/"
+	},
+	"duotone-picker": {
+		"experimental": false,
+		"deprecated": false,
+		"description": "DuotonePicker renders a duotone filter picker that lets users choose shadow and highlight colors from a palette.",
+		"documentation": "https://developer.wordpress.org/block-editor/reference-guides/components/duotone-picker/"
+	},
+	"elevation": {
+		"experimental": false,
+		"deprecated": false,
+		"description": "Elevation is a component that adds a shadow to its content to convey depth along the z-axis.",
+		"documentation": "https://developer.wordpress.org/block-editor/reference-guides/components/elevation/"
+	},
+	"external-link": {
+		"experimental": false,
+		"deprecated": false,
+		"description": "ExternalLink is a link to an external resource that includes an icon indicating it opens in a new tab.",
+		"documentation": "https://developer.wordpress.org/block-editor/reference-guides/components/external-link/"
+	},
+	"flex": {
+		"experimental": false,
+		"deprecated": false,
+		"description": "Flex is a layout component that wraps flex items and provides a consistent spacing API.",
+		"documentation": "https://developer.wordpress.org/block-editor/reference-guides/components/flex/"
+	},
+	"focal-point-picker": {
+		"experimental": false,
+		"deprecated": false,
+		"description": "FocalPointPicker renders a UI that allows selecting a focal point on an image for object-fit positioning.",
+		"documentation": "https://developer.wordpress.org/block-editor/reference-guides/components/focal-point-picker/"
+	},
+	"font-size-picker": {
+		"experimental": false,
+		"deprecated": false,
+		"description": "FontSizePicker renders a UI that allows users to select a font size from a preset list or enter a custom value.",
+		"documentation": "https://developer.wordpress.org/block-editor/reference-guides/components/font-size-picker/"
+	},
+	"form-toggle": {
+		"experimental": false,
+		"deprecated": false,
+		"description": "FormToggle renders a toggle switch for boolean on/off settings, styled for form usage.",
+		"documentation": "https://developer.wordpress.org/block-editor/reference-guides/components/form-toggle/"
+	},
+	"form-token-field": {
+		"experimental": false,
+		"deprecated": false,
+		"description": "FormTokenField renders an input field that accepts tokens (tags) with optional autocomplete suggestions.",
+		"documentation": "https://developer.wordpress.org/block-editor/reference-guides/components/form-token-field/"
+	},
+	"gradient-picker": {
+		"experimental": false,
+		"deprecated": false,
+		"description": "GradientPicker allows users to pick a gradient from a predefined set or create a custom gradient.",
+		"documentation": "https://developer.wordpress.org/block-editor/reference-guides/components/gradient-picker/"
 	}
 }
