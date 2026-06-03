@@ -1,0 +1,73 @@
+.blocks-preview-base-field {
+	display: flex;
+	align-items: center;
+	gap: 8px;
+	width: 100%;
+	max-width: 100%;
+	padding: 0 12px;
+	min-height: 40px;
+	border: 1px solid #949494;
+	border-radius: 2px;
+	background: #fff;
+	box-sizing: border-box;
+	transition:
+		border-color 0.1s linear,
+		box-shadow 0.1s linear,
+		opacity 0.1s linear;
+}
+
+.blocks-preview-base-field--inline {
+	display: inline-flex;
+	width: auto;
+}
+
+.blocks-preview-base-field--subtle {
+	opacity: 0.7;
+}
+
+.blocks-preview-base-field--disabled {
+	opacity: 0.6;
+	pointer-events: none;
+}
+
+.blocks-preview-base-field--focused {
+	border-color: var(--wp-admin-theme-color, #3858e9);
+	box-shadow: 0 0 0 0.5px var(--wp-admin-theme-color, #3858e9);
+}
+
+.blocks-preview-base-field--error {
+	border-color: #d63638;
+}
+
+.blocks-preview-base-field--error.blocks-preview-base-field--focused {
+	box-shadow: 0 0 0 0.5px #d63638;
+}
+
+.blocks-preview-base-field__input {
+	flex: 1;
+	min-width: 0;
+	margin: 0;
+	padding: 8px 0;
+	border: 0;
+	background: transparent;
+	color: #1e1e1e;
+	font-size: 13px;
+	line-height: 1.4;
+	outline: none;
+}
+
+.blocks-preview-base-field__input:disabled {
+	cursor: not-allowed;
+}
+
+.blocks-preview-base-field__affix {
+	color: #757575;
+	font-size: 13px;
+	white-space: nowrap;
+}
+
+.blocks-preview-base-field-block .blocks-preview-base-field__value {
+	flex: 1;
+	font-size: 13px;
+	line-height: 1.4;
+}

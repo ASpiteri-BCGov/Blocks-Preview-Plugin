@@ -1,14 +1,30 @@
 # Blocks Preview
 
-A WordPress plugin scaffold for block preview functionality.
+WordPress blocks that preview [@wordpress/components](https://developer.wordpress.org/block-editor/reference-guides/components/) patterns in the block editor.
 
-## Installation
+## Blocks
 
-1. Ensure this folder lives at `wp-content/plugins/Blocks-Preview-Plugin/`.
-2. In **Plugins → Installed Plugins**, activate **Blocks Preview**.
+### Base Field (`blocks-preview/base-field`)
 
-The plugin currently registers with WordPress but does not hook into any behavior.
+Implements the [BaseField](https://developer.wordpress.org/block-editor/reference-guides/components/base-field/) hook pattern (`useBaseField` + custom field) with the documented props: `disabled`, `hasError`, `isInline`, and `isSubtle`. The hook is bundled in the block because `useBaseField` is not part of the public `@wordpress/components` API.
+
+## Setup
+
+```bash
+npm install
+npm run build
+```
+
+Activate **Blocks Preview** under **Plugins**, then insert the **Base Field** block from the block inserter.
 
 ## Development
 
-Main bootstrap file: `blocks-preview-plugin.php`.
+```bash
+npm run start
+```
+
+Rebuild for production:
+
+```bash
+npm run build
+```

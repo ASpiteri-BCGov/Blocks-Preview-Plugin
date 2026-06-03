@@ -1,0 +1,21 @@
+{
+	"name": "blocks-preview-plugin",
+	"version": "0.1.0",
+	"private": true,
+	"description": "Preview WordPress block editor components as blocks.",
+	"scripts": {
+		"build": "wp-scripts build --blocks-manifest",
+		"start": "wp-scripts start --blocks-manifest",
+		"lint:js": "wp-scripts lint-js",
+		"format": "wp-scripts format"
+	},
+	"devDependencies": {
+		"@wordpress/block-editor": "^15.20.0",
+		"@wordpress/blocks": "^15.20.0",
+		"@wordpress/components": "^34.0.0",
+		"@wordpress/element": "^7.0.0",
+		"@wordpress/i18n": "^6.20.0",
+		"@wordpress/primitives": "^4.20.0",
+		"@wordpress/scripts": "^32.3.0"
+	}
+}
