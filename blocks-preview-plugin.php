@@ -89,6 +89,7 @@ function blocks_preview_get_components_config() {
 		return $config;
 	}
 
+	// phpcs:ignore WordPress.WP.AlternativeFunctions.file_get_contents_file_get_contents -- Reading local plugin config.
 	$decoded = json_decode( file_get_contents( $config_path ), true );
 
 	$config = is_array( $decoded ) ? $decoded : array();

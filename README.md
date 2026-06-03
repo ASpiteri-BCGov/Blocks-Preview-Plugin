@@ -39,3 +39,27 @@ Production build:
 ```bash
 npm run build
 ```
+
+## Linting
+
+Same tooling pattern as [wordpress-search](https://github.com/bcgov/wordpress-search):
+
+```bash
+# JavaScript (@bcgov/wordpress-eslint via .eslintrc.js)
+npm run lint:js
+npm run fix:js
+
+# SCSS (WordPress + BC Gov stylelint rules in .stylelintrc)
+npm run lint:css
+npm run fix:css
+
+# All front-end linters
+npm run lint
+
+# PHP (WordPress Coding Standards via phpcs.xml.dist — plugin PHP only, not node_modules)
+composer install
+composer lint-php
+composer fix-php
+```
+
+CI runs `.github/workflows/linting.yml` (JS, CSS, PHP) and `phpcs-validate.yml` on pull requests.
