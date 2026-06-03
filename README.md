@@ -17,6 +17,11 @@ WordPress blocks that preview [@wordpress/components](https://developer.wordpres
 | Box Control | [BoxControl](https://developer.wordpress.org/block-editor/reference-guides/components/box-control/) |
 | Button | [Button](https://developer.wordpress.org/block-editor/reference-guides/components/button/) |
 | Button Group | [ButtonGroup](https://developer.wordpress.org/block-editor/reference-guides/components/button-group/) (deprecated) |
+| Card | [Card](https://developer.wordpress.org/block-editor/reference-guides/components/card/) |
+| Checkbox Control | [CheckboxControl](https://developer.wordpress.org/block-editor/reference-guides/components/checkbox-control/) |
+| Clipboard Button | [ClipboardButton](https://developer.wordpress.org/block-editor/reference-guides/components/clipboard-button/) (deprecated) |
+| Color Indicator | [ColorIndicator](https://developer.wordpress.org/block-editor/reference-guides/components/color-indicator/) |
+| Color Palette | [ColorPalette](https://developer.wordpress.org/block-editor/reference-guides/components/color-palette/) |
 
 Component **description**, **documentation** URL, **experimental**, and **deprecated** flags live in one file: [`src/components-config.json`](src/components-config.json). Blocks merge that config in the editor (JS) and at registration (PHP) so the inserter and sidebar stay in sync.
 

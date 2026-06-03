@@ -8,9 +8,9 @@ import { __, sprintf } from '@wordpress/i18n';
 /**
  * Resolves a component from wp.components, including pre-6.8 experimental names.
  *
- * @param {string} stableName        Stable export (WordPress 6.8+).
- * @param {string} experimentalName  Legacy __experimental* export.
- * @return {import('react').ComponentType|undefined}
+ * @param {string} stableName       Stable export (WordPress 6.8+).
+ * @param {string} experimentalName Legacy __experimental* export.
+ * @return {import('react').ComponentType|undefined} Resolved component, if available.
  */
 export function resolveComponent( stableName, experimentalName ) {
 	return components[ stableName ] || components[ experimentalName ];

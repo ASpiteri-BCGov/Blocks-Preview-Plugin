@@ -1,0 +1,15 @@
+@import '../shared/editor';
+
+.blocks-preview-clipboard-button-block {
+	padding: 8px 0;
+}
+
+.blocks-preview-clipboard-button-block__copy-text {
+	margin: 0 0 12px;
+	padding: 12px;
+	border: 1px solid #ddd;
+	border-radius: 2px;
+	background: #f6f7f7;
+	font-size: 13px;
+	line-height: 1.5;
+}
