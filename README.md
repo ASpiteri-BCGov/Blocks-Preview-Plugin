@@ -22,6 +22,26 @@ WordPress blocks that preview [@wordpress/components](https://developer.wordpres
 | Clipboard Button | [ClipboardButton](https://developer.wordpress.org/block-editor/reference-guides/components/clipboard-button/) (deprecated) |
 | Color Indicator | [ColorIndicator](https://developer.wordpress.org/block-editor/reference-guides/components/color-indicator/) |
 | Color Palette | [ColorPalette](https://developer.wordpress.org/block-editor/reference-guides/components/color-palette/) |
+| Color Picker | [ColorPicker](https://developer.wordpress.org/block-editor/reference-guides/components/color-picker/) |
+| Combobox Control | [ComboboxControl](https://developer.wordpress.org/block-editor/reference-guides/components/combobox-control/) |
+| Custom Gradient Picker | [CustomGradientPicker](https://developer.wordpress.org/block-editor/reference-guides/components/custom-gradient-picker/) |
+| Custom Select Control | [CustomSelectControl](https://developer.wordpress.org/block-editor/reference-guides/components/custom-select-control/) |
+| Dashicon | [Dashicon](https://developer.wordpress.org/block-editor/reference-guides/components/dashicon/) |
+| Date Time Picker | [DateTimePicker](https://developer.wordpress.org/block-editor/reference-guides/components/date-time-picker/) |
+| Disabled | [Disabled](https://developer.wordpress.org/block-editor/reference-guides/components/disabled/) |
+| Draggable | [Draggable](https://developer.wordpress.org/block-editor/reference-guides/components/draggable/) |
+| Drop Zone | [DropZone](https://developer.wordpress.org/block-editor/reference-guides/components/drop-zone/) |
+| Dropdown | [Dropdown](https://developer.wordpress.org/block-editor/reference-guides/components/dropdown/) |
+| Dropdown Menu | [DropdownMenu](https://developer.wordpress.org/block-editor/reference-guides/components/dropdown-menu/) |
+| Duotone Picker | [DuotonePicker](https://developer.wordpress.org/block-editor/reference-guides/components/duotone-picker/) |
+| Elevation | [Elevation](https://developer.wordpress.org/block-editor/reference-guides/components/elevation/) |
+| External Link | [ExternalLink](https://developer.wordpress.org/block-editor/reference-guides/components/external-link/) |
+| Flex | [Flex](https://developer.wordpress.org/block-editor/reference-guides/components/flex/) |
+| Focal Point Picker | [FocalPointPicker](https://developer.wordpress.org/block-editor/reference-guides/components/focal-point-picker/) |
+| Font Size Picker | [FontSizePicker](https://developer.wordpress.org/block-editor/reference-guides/components/font-size-picker/) |
+| Form Toggle | [FormToggle](https://developer.wordpress.org/block-editor/reference-guides/components/form-toggle/) |
+| Form Token Field | [FormTokenField](https://developer.wordpress.org/block-editor/reference-guides/components/form-token-field/) |
+| Gradient Picker | [GradientPicker](https://developer.wordpress.org/block-editor/reference-guides/components/gradient-picker/) |
 
 Component **description**, **documentation** URL, **experimental**, and **deprecated** flags live in one file: [`src/components-config.json`](src/components-config.json). Blocks merge that config in the editor (JS) and at registration (PHP) so the inserter and sidebar stay in sync.
 

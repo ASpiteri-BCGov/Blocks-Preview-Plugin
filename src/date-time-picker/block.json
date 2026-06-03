@@ -1,0 +1,27 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "blocks-preview/date-time-picker",
+	"version": "0.1.0",
+	"title": "Date Time Picker",
+	"category": "blocks-preview",
+	"icon": "calendar-alt",
+	"example": {},
+	"attributes": {
+		"date": {
+			"type": "string",
+			"default": "2026-06-03T12:00:00"
+		},
+		"is12Hour": {
+			"type": "boolean",
+			"default": true
+		}
+	},
+	"supports": {
+		"html": false
+	},
+	"textdomain": "blocks-preview",
+	"editorScript": "file:./index.js",
+	"editorStyle": "file:./index.css",
+	"style": "file:./style-index.css"
+}
