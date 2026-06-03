@@ -1,0 +1,22 @@
+.blocks-preview-button-group-block__saved {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.blocks-preview-button-group-block__item {
+	display: inline-block;
+	padding: 8px 16px;
+	border: 1px solid #949494;
+	font-size: 13px;
+	line-height: 1.4;
+}
+
+.blocks-preview-button-group-block__item + .blocks-preview-button-group-block__item {
+	margin-left: -1px;
+}
+
+.blocks-preview-button-group-block__item--active {
+	background: #3858e9;
+	border-color: #3858e9;
+	color: #fff;
+}

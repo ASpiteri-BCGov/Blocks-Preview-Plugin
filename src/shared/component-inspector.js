@@ -3,12 +3,40 @@
  */
 import { InspectorControls } from '@wordpress/block-editor';
 import { ExternalLink, Notice, PanelBody } from '@wordpress/components';
-import { __ } from '@wordpress/i18n';
+import { __, sprintf } from '@wordpress/i18n';
 
 const EXPERIMENTAL_NOTICE = __(
 	'This feature is still experimental. "Experimental" means this is an early implementation subject to drastic and breaking changes.',
 	'blocks-preview'
 );
+
+const DEPRECATED_NOTICE = __(
+	'This component is deprecated and may be removed in a future release.',
+	'blocks-preview'
+);
+
+/**
+ * @param {Object} metadata Merged block metadata from getComponentMetadata().
+ * @return {string|null}    Notice text when the component is deprecated, otherwise null.
+ */
+function getDeprecatedNotice( metadata ) {
+	if ( ! metadata.deprecated ) {
+		return null;
+	}
+
+	if ( metadata.deprecatedReplacement ) {
+		return sprintf(
+			/* translators: %s: recommended replacement component name */
+			__(
+				'This component is deprecated. Use %s instead.',
+				'blocks-preview'
+			),
+			metadata.deprecatedReplacement
+		);
+	}
+
+	return DEPRECATED_NOTICE;
+}
 
 /**
  * Shared sidebar panel for component preview blocks.
@@ -25,6 +53,8 @@ export function ComponentInspector( {
 	docsLinkLabel,
 	children,
 } ) {
+	const deprecatedNotice = getDeprecatedNotice( metadata );
+
 	return (
 		<InspectorControls>
 			<PanelBody title={ panelTitle } initialOpen>
@@ -35,6 +65,15 @@ export function ComponentInspector( {
 						className="blocks-preview-component-block__experimental-notice"
 					>
 						{ EXPERIMENTAL_NOTICE }
+					</Notice>
+				) : null }
+				{ deprecatedNotice ? (
+					<Notice
+						status="warning"
+						isDismissible={ false }
+						className="blocks-preview-component-block__deprecated-notice"
+					>
+						{ deprecatedNotice }
 					</Notice>
 				) : null }
 				{ metadata.description ? (

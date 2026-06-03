@@ -28,6 +28,11 @@ const BLOCKS_PREVIEW_BLOCK_SLUGS = array(
 	'animate',
 	'autocomplete',
 	'base-control',
+	'border-box-control',
+	'border-control',
+	'box-control',
+	'button',
+	'button-group',
 );
 
 /**

@@ -1,32 +1,69 @@
 {
 	"base-field": {
 		"experimental": true,
+		"deprecated": false,
 		"description": "BaseField is an internal (i.e., not exported in the index.js) primitive component used for building more complex fields like TextField. It provides error handling and focus styles for field components. It does not handle layout of the component aside from wrapping the field in a Flex wrapper.",
 		"documentation": "https://developer.wordpress.org/block-editor/reference-guides/components/base-field/"
 	},
 	"alignment-matrix-control": {
 		"experimental": false,
+		"deprecated": false,
 		"description": "AlignmentMatrixControl components enable adjustments to horizontal and vertical alignments for UI.",
 		"documentation": "https://developer.wordpress.org/block-editor/reference-guides/components/alignment-matrix-control/"
 	},
 	"angle-picker-control": {
 		"experimental": false,
+		"deprecated": false,
 		"description": "AnglePickerControl is a React component to render a UI that allows users to pick an angle. Users can choose an angle in a visual UI with the mouse by dragging an angle indicator inside a circle or by directly inserting the desired angle in a text field.",
 		"documentation": "https://developer.wordpress.org/block-editor/reference-guides/components/angle-picker-control/"
 	},
 	"animate": {
 		"experimental": false,
+		"deprecated": false,
 		"description": "Simple interface to introduce animations to components.",
 		"documentation": "https://developer.wordpress.org/block-editor/reference-guides/components/animate/"
 	},
 	"autocomplete": {
 		"experimental": false,
+		"deprecated": false,
 		"description": "This component is used to provide autocompletion support for a child input component. The Autocomplete component is not currently intended to be used as a standalone component. It is used by other packages to provide autocompletion support for the block editor.",
 		"documentation": "https://developer.wordpress.org/block-editor/reference-guides/components/autocomplete/"
 	},
 	"base-control": {
 		"experimental": false,
+		"deprecated": false,
 		"description": "BaseControl is a low-level component used to generate labels and help text for components handling user inputs.",
 		"documentation": "https://developer.wordpress.org/block-editor/reference-guides/components/base-control/"
+	},
+	"border-box-control": {
+		"experimental": false,
+		"deprecated": false,
+		"description": "An input control for the color, style, and width of the border of a box. The border can be customized as a whole, or individually for each side of the box.",
+		"documentation": "https://developer.wordpress.org/block-editor/reference-guides/components/border-box-control/"
+	},
+	"border-control": {
+		"experimental": false,
+		"deprecated": false,
+		"description": "An input control for a border's color, style, and width. Border radius is not covered by this control as it may be desired separate to color, style, and width.",
+		"documentation": "https://developer.wordpress.org/block-editor/reference-guides/components/border-control/"
+	},
+	"box-control": {
+		"experimental": false,
+		"deprecated": false,
+		"description": "A control that lets users set values for top, right, bottom, and left. Can be used as an input control for values like padding or margin.",
+		"documentation": "https://developer.wordpress.org/block-editor/reference-guides/components/box-control/"
+	},
+	"button": {
+		"experimental": false,
+		"deprecated": false,
+		"description": "Lets users take actions and make choices with a single click or tap.",
+		"documentation": "https://developer.wordpress.org/block-editor/reference-guides/components/button/"
+	},
+	"button-group": {
+		"experimental": false,
+		"deprecated": true,
+		"deprecatedReplacement": "ToggleGroupControl",
+		"description": "ButtonGroup can be used to group any related buttons together. To emphasize related buttons, a group should share a common container.",
+		"documentation": "https://developer.wordpress.org/block-editor/reference-guides/components/button-group/"
 	}
 }

@@ -1,0 +1,35 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "blocks-preview/border-control",
+	"version": "0.1.0",
+	"title": "Border Control",
+	"category": "blocks-preview",
+	"icon": "admin-customizer",
+	"example": {},
+	"attributes": {
+		"label": {
+			"type": "string",
+			"default": "Border"
+		},
+		"withSlider": {
+			"type": "boolean",
+			"default": false
+		},
+		"borderValue": {
+			"type": "object",
+			"default": {
+				"color": "#72aee6",
+				"style": "solid",
+				"width": "2px"
+			}
+		}
+	},
+	"supports": {
+		"html": false
+	},
+	"textdomain": "blocks-preview",
+	"editorScript": "file:./index.js",
+	"editorStyle": "file:./index.css",
+	"style": "file:./style-index.css"
+}

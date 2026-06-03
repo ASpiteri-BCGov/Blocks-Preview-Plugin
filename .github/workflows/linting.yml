@@ -1,39 +1,39 @@
 name: Linting
 
 on:
-  pull_request:
-  workflow_dispatch:
+    pull_request:
+    workflow_dispatch:
 
 jobs:
-  linting:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout code
-        uses: actions/checkout@v4
+    linting:
+        runs-on: ubuntu-latest
+        steps:
+            - name: Checkout code
+              uses: actions/checkout@v4
 
-      - name: Install Node.js 22
-        uses: actions/setup-node@v4
-        with:
-          node-version: "22.16.0"
-          cache: npm
+            - name: Install Node.js 22
+              uses: actions/setup-node@v4
+              with:
+                  node-version: '22.16.0'
+                  cache: npm
 
-      - name: Install dependencies
-        run: |
-          composer install
-          npm install
+            - name: Install dependencies
+              run: |
+                  composer install
+                  npm install
 
-      - name: Validate Composer configuration
-        run: |
-          OUTPUT=$(composer validate --no-check-publish)
-          if grep -q 'ERROR' <<< "$OUTPUT"; then
-            exit 1
-          fi
+            - name: Validate Composer configuration
+              run: |
+                  OUTPUT=$(composer validate --no-check-publish)
+                  if grep -q 'ERROR' <<< "$OUTPUT"; then
+                    exit 1
+                  fi
 
-      - name: Lint PHP
-        run: composer lint-php
+            - name: Lint PHP
+              run: composer lint-php
 
-      - name: Lint CSS
-        run: npm run lint:css
+            - name: Lint CSS
+              run: npm run lint:css
 
-      - name: Lint JS
-        run: npm run lint:js
+            - name: Lint JS
+              run: npm run lint:js

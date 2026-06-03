@@ -12,10 +12,15 @@ WordPress blocks that preview [@wordpress/components](https://developer.wordpres
 | Animate | [Animate](https://developer.wordpress.org/block-editor/reference-guides/components/animate/) |
 | Autocomplete | [Autocomplete](https://developer.wordpress.org/block-editor/reference-guides/components/autocomplete/) |
 | Base Control | [BaseControl](https://developer.wordpress.org/block-editor/reference-guides/components/base-control/) |
+| Border Box Control | [BorderBoxControl](https://developer.wordpress.org/block-editor/reference-guides/components/border-box-control/) |
+| Border Control | [BorderControl](https://developer.wordpress.org/block-editor/reference-guides/components/border-control/) |
+| Box Control | [BoxControl](https://developer.wordpress.org/block-editor/reference-guides/components/box-control/) |
+| Button | [Button](https://developer.wordpress.org/block-editor/reference-guides/components/button/) |
+| Button Group | [ButtonGroup](https://developer.wordpress.org/block-editor/reference-guides/components/button-group/) (deprecated) |
 
-Component **description**, **documentation** URL, and **experimental** flag live in one file: [`src/components-config.json`](src/components-config.json). Blocks merge that config in the editor (JS) and at registration (PHP) so the inserter and sidebar stay in sync.
+Component **description**, **documentation** URL, **experimental**, and **deprecated** flags live in one file: [`src/components-config.json`](src/components-config.json). Blocks merge that config in the editor (JS) and at registration (PHP) so the inserter and sidebar stay in sync.
 
-Each block sidebar also shows an experimental notice when `experimental` is `true` in that config.
+Each block sidebar shows a warning notice when `experimental` or `deprecated` is `true`. Deprecated blocks may also set `deprecatedReplacement` (for example, Button Group → `ToggleGroupControl`).
 
 ## Setup
 
