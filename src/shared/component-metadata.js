@@ -5,9 +5,11 @@ import componentsConfig from '../components-config.json';
 
 /**
  * @typedef {Object} ComponentConfigEntry
- * @property {boolean} [experimental]  Whether the component is marked experimental in the docs.
- * @property {string}  [description]   Component description shown in the block sidebar.
- * @property {string}  [documentation] URL to the component reference documentation.
+ * @property {boolean} [experimental]           Whether the component is marked experimental in the docs.
+ * @property {boolean} [deprecated]             Whether the component is marked deprecated in the docs.
+ * @property {string}  [deprecatedReplacement]  Recommended replacement component name (when deprecated).
+ * @property {string}  [description]            Component description shown in the block sidebar.
+ * @property {string}  [documentation]          URL to the component reference documentation.
  */
 
 /**

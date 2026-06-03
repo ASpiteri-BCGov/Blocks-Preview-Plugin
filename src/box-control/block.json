@@ -1,0 +1,36 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "blocks-preview/box-control",
+	"version": "0.1.0",
+	"title": "Box Control",
+	"category": "blocks-preview",
+	"icon": "fullscreen-alt",
+	"example": {},
+	"attributes": {
+		"label": {
+			"type": "string",
+			"default": "Box Control"
+		},
+		"splitOnAxis": {
+			"type": "boolean",
+			"default": false
+		},
+		"boxValues": {
+			"type": "object",
+			"default": {
+				"top": "50px",
+				"right": "10%",
+				"bottom": "50px",
+				"left": "10%"
+			}
+		}
+	},
+	"supports": {
+		"html": false
+	},
+	"textdomain": "blocks-preview",
+	"editorScript": "file:./index.js",
+	"editorStyle": "file:./index.css",
+	"style": "file:./style-index.css"
+}
