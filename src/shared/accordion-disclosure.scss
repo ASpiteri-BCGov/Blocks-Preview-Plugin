@@ -1,0 +1,44 @@
+/**
+ * Shared accordion styles for editor and frontend.
+ */
+@import '@bcgov/design-tokens/css/variables.css';
+
+.blocks-preview-custom-accordion {
+	font-family: 'BC Sans', 'Noto Sans', Verdana, Arial, sans-serif;
+	border: 1px solid var(--surface-color-border-default, #d8d8d8);
+	background: var(--surface-color-background-white, #fff);
+
+	summary {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		padding: 12px 16px;
+		background: var(--surface-color-secondary-default, #f0f2f5);
+		cursor: pointer;
+		font-weight: 700;
+		list-style: none;
+
+		&::-webkit-details-marker {
+			display: none;
+		}
+
+		&::after {
+			content: '';
+			width: 0.5rem;
+			height: 0.5rem;
+			border-right: 2px solid currentColor;
+			border-bottom: 2px solid currentColor;
+			transform: rotate(45deg);
+			transition: transform 0.15s ease;
+		}
+	}
+
+	&[open] summary::after {
+		transform: rotate(-135deg);
+		margin-top: 0.25rem;
+	}
+}
+
+.blocks-preview-custom-accordion__content {
+	padding: 16px;
+}

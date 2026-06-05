@@ -1,0 +1,23 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "blocks-preview-custom/accordion",
+	"version": "0.1.0",
+	"title": "Accordion",
+	"category": "blocks-preview-custom",
+	"icon": "editor-ul",
+	"description": "One expandable section with draggable blocks inside.",
+	"attributes": {
+		"title": {
+			"type": "string",
+			"default": "Section title"
+		}
+	},
+	"supports": {
+		"html": false
+	},
+	"textdomain": "blocks-preview",
+	"editorScript": "file:./index.js",
+	"editorStyle": "file:./index.css",
+	"style": "file:./style-index.css"
+}

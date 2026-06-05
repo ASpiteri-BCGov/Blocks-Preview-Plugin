@@ -34,8 +34,7 @@ function getTemplate( actionType ) {
 			? [
 					'core/paragraph',
 					{
-						content:
-							'<a href="https://example.com">Learn more</a>',
+						content: '<a href="https://example.com">Learn more</a>',
 					},
 			  ]
 			: [
