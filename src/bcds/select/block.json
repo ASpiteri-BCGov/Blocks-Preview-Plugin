@@ -1,0 +1,31 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "blocks-preview-bcds/select",
+	"version": "0.1.0",
+	"title": "BCDS Select",
+	"category": "blocks-preview-bcds",
+	"icon": "arrow-down-alt2",
+	"example": {},
+	"attributes": {
+		"label": {
+			"type": "string",
+			"default": "Choose an option"
+		},
+		"placeholder": {
+			"type": "string",
+			"default": "Select…"
+		},
+		"size": {
+			"type": "string",
+			"default": "medium"
+		}
+	},
+	"supports": {
+		"html": false
+	},
+	"textdomain": "blocks-preview",
+	"editorScript": "file:./index.js",
+	"editorStyle": "file:./index.css",
+	"style": "file:./style-index.css"
+}

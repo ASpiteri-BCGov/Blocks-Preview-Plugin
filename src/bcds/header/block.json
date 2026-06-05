@@ -1,0 +1,23 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "blocks-preview-bcds/header",
+	"version": "0.1.0",
+	"title": "BCDS Header",
+	"category": "blocks-preview-bcds",
+	"icon": "admin-site",
+	"example": {},
+	"attributes": {
+		"title": {
+			"type": "string",
+			"default": "Service name"
+		}
+	},
+	"supports": {
+		"html": false
+	},
+	"textdomain": "blocks-preview",
+	"editorScript": "file:./index.js",
+	"editorStyle": "file:./index.css",
+	"style": "file:./style-index.css"
+}

@@ -1,0 +1,31 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "blocks-preview-guten/animate",
+	"version": "0.1.0",
+	"title": "Guten Animate",
+	"category": "blocks-preview-guten",
+	"icon": "controls-play",
+	"example": {},
+	"attributes": {
+		"animationType": {
+			"type": "string",
+			"default": "slide-in"
+		},
+		"origin": {
+			"type": "string",
+			"default": "top"
+		},
+		"noticeText": {
+			"type": "string",
+			"default": "Animation finished."
+		}
+	},
+	"supports": {
+		"html": false
+	},
+	"textdomain": "blocks-preview",
+	"editorScript": "file:./index.js",
+	"editorStyle": "file:./index.css",
+	"style": "file:./style-index.css"
+}

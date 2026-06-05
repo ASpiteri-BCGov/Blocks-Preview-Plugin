@@ -1,0 +1,31 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "blocks-preview-guten/flex",
+	"version": "0.1.0",
+	"title": "Guten Flex",
+	"category": "blocks-preview-guten",
+	"icon": "columns",
+	"example": {},
+	"attributes": {
+		"direction": {
+			"type": "string",
+			"default": "row"
+		},
+		"justify": {
+			"type": "string",
+			"default": "flex-start"
+		},
+		"align": {
+			"type": "string",
+			"default": "stretch"
+		}
+	},
+	"supports": {
+		"html": false
+	},
+	"textdomain": "blocks-preview",
+	"editorScript": "file:./index.js",
+	"editorStyle": "file:./index.css",
+	"style": "file:./style-index.css"
+}

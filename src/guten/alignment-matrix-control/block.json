@@ -1,0 +1,31 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "blocks-preview-guten/alignment-matrix-control",
+	"version": "0.1.0",
+	"title": "Guten Alignment Matrix Control",
+	"category": "blocks-preview-guten",
+	"icon": "grid-view",
+	"example": {},
+	"attributes": {
+		"value": {
+			"type": "string",
+			"default": "center center"
+		},
+		"label": {
+			"type": "string",
+			"default": "Alignment Matrix Control"
+		},
+		"width": {
+			"type": "number",
+			"default": 92
+		}
+	},
+	"supports": {
+		"html": false
+	},
+	"textdomain": "blocks-preview",
+	"editorScript": "file:./index.js",
+	"editorStyle": "file:./index.css",
+	"style": "file:./style-index.css"
+}

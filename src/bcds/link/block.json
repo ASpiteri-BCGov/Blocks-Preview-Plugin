@@ -1,0 +1,31 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "blocks-preview-bcds/link",
+	"version": "0.1.0",
+	"title": "BCDS Link",
+	"category": "blocks-preview-bcds",
+	"icon": "admin-links",
+	"example": {},
+	"attributes": {
+		"text": {
+			"type": "string",
+			"default": "Learn more"
+		},
+		"href": {
+			"type": "string",
+			"default": "https://www2.gov.bc.ca/"
+		},
+		"size": {
+			"type": "string",
+			"default": "medium"
+		}
+	},
+	"supports": {
+		"html": false
+	},
+	"textdomain": "blocks-preview",
+	"editorScript": "file:./index.js",
+	"editorStyle": "file:./index.css",
+	"style": "file:./style-index.css"
+}

@@ -1,0 +1,31 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "blocks-preview-bcds/inline-alert",
+	"version": "0.1.0",
+	"title": "BCDS Inline Alert",
+	"category": "blocks-preview-bcds",
+	"icon": "info",
+	"example": {},
+	"attributes": {
+		"variant": {
+			"type": "string",
+			"default": "info"
+		},
+		"title": {
+			"type": "string",
+			"default": "Inline alert"
+		},
+		"description": {
+			"type": "string",
+			"default": "Additional inline alert details."
+		}
+	},
+	"supports": {
+		"html": false
+	},
+	"textdomain": "blocks-preview",
+	"editorScript": "file:./index.js",
+	"editorStyle": "file:./index.css",
+	"style": "file:./style-index.css"
+}

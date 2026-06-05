@@ -1,0 +1,23 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "blocks-preview-guten/progress-bar",
+	"version": "0.1.0",
+	"title": "Guten Progress Bar",
+	"category": "blocks-preview-guten",
+	"icon": "controls-play",
+	"example": {},
+	"attributes": {
+		"value": {
+			"type": "number",
+			"default": 50
+		}
+	},
+	"supports": {
+		"html": false
+	},
+	"textdomain": "blocks-preview",
+	"editorScript": "file:./index.js",
+	"editorStyle": "file:./index.css",
+	"style": "file:./style-index.css"
+}

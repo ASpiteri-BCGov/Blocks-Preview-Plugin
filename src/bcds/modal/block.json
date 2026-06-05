@@ -1,0 +1,27 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "blocks-preview-bcds/modal",
+	"version": "0.1.0",
+	"title": "BCDS Modal",
+	"category": "blocks-preview-bcds",
+	"icon": "fullscreen-alt",
+	"example": {},
+	"attributes": {
+		"title": {
+			"type": "string",
+			"default": "Modal title"
+		},
+		"message": {
+			"type": "string",
+			"default": "Modal content goes here."
+		}
+	},
+	"supports": {
+		"html": false
+	},
+	"textdomain": "blocks-preview",
+	"editorScript": "file:./index.js",
+	"editorStyle": "file:./index.css",
+	"style": "file:./style-index.css"
+}

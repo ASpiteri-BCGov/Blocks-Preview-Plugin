@@ -1,0 +1,23 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "blocks-preview-guten/gradient-picker",
+	"version": "0.1.0",
+	"title": "Guten Gradient Picker",
+	"category": "blocks-preview-guten",
+	"icon": "art",
+	"example": {},
+	"attributes": {
+		"value": {
+			"type": "string",
+			"default": "linear-gradient(135deg,rgb(114,174,230) 0%,rgb(230,80,84) 100%)"
+		}
+	},
+	"supports": {
+		"html": false
+	},
+	"textdomain": "blocks-preview",
+	"editorScript": "file:./index.js",
+	"editorStyle": "file:./index.css",
+	"style": "file:./style-index.css"
+}

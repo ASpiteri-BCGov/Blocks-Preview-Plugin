@@ -1,0 +1,27 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "blocks-preview-guten/badge",
+	"version": "0.1.0",
+	"title": "Guten Badge",
+	"category": "blocks-preview-guten",
+	"icon": "tag",
+	"example": {},
+	"attributes": {
+		"label": {
+			"type": "string",
+			"default": "New"
+		},
+		"intent": {
+			"type": "string",
+			"default": "default"
+		}
+	},
+	"supports": {
+		"html": false
+	},
+	"textdomain": "blocks-preview",
+	"editorScript": "file:./index.js",
+	"editorStyle": "file:./index.css",
+	"style": "file:./style-index.css"
+}

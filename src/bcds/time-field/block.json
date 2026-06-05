@@ -1,0 +1,27 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "blocks-preview-bcds/time-field",
+	"version": "0.1.0",
+	"title": "BCDS Time Field",
+	"category": "blocks-preview-bcds",
+	"icon": "clock",
+	"example": {},
+	"attributes": {
+		"label": {
+			"type": "string",
+			"default": "Time"
+		},
+		"size": {
+			"type": "string",
+			"default": "medium"
+		}
+	},
+	"supports": {
+		"html": false
+	},
+	"textdomain": "blocks-preview",
+	"editorScript": "file:./index.js",
+	"editorStyle": "file:./index.css",
+	"style": "file:./style-index.css"
+}

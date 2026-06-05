@@ -1,0 +1,18 @@
+@import '../../shared/editor';
+
+.blocks-preview-circular-option-picker-block__options {
+	display: flex;
+	gap: 8px;
+}
+
+.blocks-preview-circular-option-picker-block__option {
+	padding: 0;
+	border: 2px solid transparent;
+	border-radius: 50%;
+	background: none;
+	cursor: pointer;
+}
+
+.blocks-preview-circular-option-picker-block__option.is-selected {
+	border-color: #3858e9;
+}

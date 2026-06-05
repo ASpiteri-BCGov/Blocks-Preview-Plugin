@@ -1,0 +1,9 @@
+/**
+ * BC Gov design system base styles for the block editor.
+ * Bundled into each BCDS block's editorStyle so tokens load inside the iframe.
+ */
+@import '@bcgov/design-tokens/css/variables.css';
+
+.blocks-preview-bcds-block {
+	font-family: 'BC Sans', 'Noto Sans', Verdana, Arial, sans-serif;
+}

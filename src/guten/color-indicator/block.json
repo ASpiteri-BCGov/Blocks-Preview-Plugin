@@ -1,0 +1,23 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "blocks-preview-guten/color-indicator",
+	"version": "0.1.0",
+	"title": "Guten Color Indicator",
+	"category": "blocks-preview-guten",
+	"icon": "art",
+	"example": {},
+	"attributes": {
+		"colorValue": {
+			"type": "string",
+			"default": "#0073aa"
+		}
+	},
+	"supports": {
+		"html": false
+	},
+	"textdomain": "blocks-preview",
+	"editorScript": "file:./index.js",
+	"editorStyle": "file:./index.css",
+	"style": "file:./style-index.css"
+}

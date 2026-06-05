@@ -1,0 +1,23 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "blocks-preview-guten/tree-grid",
+	"version": "0.1.0",
+	"title": "Guten Tree Grid",
+	"category": "blocks-preview-guten",
+	"icon": "networking",
+	"example": {},
+	"attributes": {
+		"rowLabel": {
+			"type": "string",
+			"default": "Row item"
+		}
+	},
+	"supports": {
+		"html": false
+	},
+	"textdomain": "blocks-preview",
+	"editorScript": "file:./index.js",
+	"editorStyle": "file:./index.css",
+	"style": "file:./style-index.css"
+}

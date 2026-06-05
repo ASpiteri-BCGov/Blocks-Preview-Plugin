@@ -1,0 +1,50 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "blocks-preview-guten/base-field",
+	"version": "0.1.0",
+	"title": "Guten Base Field",
+	"category": "blocks-preview-guten",
+	"icon": "forms",
+	"example": {},
+	"attributes": {
+		"value": {
+			"type": "string",
+			"default": ""
+		},
+		"prefix": {
+			"type": "string",
+			"default": ""
+		},
+		"suffix": {
+			"type": "string",
+			"default": ""
+		},
+		"disabled": {
+			"type": "boolean",
+			"default": false
+		},
+		"hasError": {
+			"type": "boolean",
+			"default": false
+		},
+		"isInline": {
+			"type": "boolean",
+			"default": false
+		},
+		"isSubtle": {
+			"type": "boolean",
+			"default": false
+		}
+	},
+	"supports": {
+		"html": false,
+		"interactivity": {
+			"clientNavigation": true
+		}
+	},
+	"textdomain": "blocks-preview",
+	"editorScript": "file:./index.js",
+	"editorStyle": "file:./index.css",
+	"style": "file:./style-index.css"
+}

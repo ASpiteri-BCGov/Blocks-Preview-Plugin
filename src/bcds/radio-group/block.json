@@ -1,0 +1,27 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "blocks-preview-bcds/radio-group",
+	"version": "0.1.0",
+	"title": "BCDS Radio Group",
+	"category": "blocks-preview-bcds",
+	"icon": "marker",
+	"example": {},
+	"attributes": {
+		"label": {
+			"type": "string",
+			"default": "Choose one"
+		},
+		"orientation": {
+			"type": "string",
+			"default": "vertical"
+		}
+	},
+	"supports": {
+		"html": false
+	},
+	"textdomain": "blocks-preview",
+	"editorScript": "file:./index.js",
+	"editorStyle": "file:./index.css",
+	"style": "file:./style-index.css"
+}
