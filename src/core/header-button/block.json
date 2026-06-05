@@ -1,0 +1,21 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "blocks-preview-core/header-button",
+	"version": "0.1.0",
+	"title": "Header & Button",
+	"category": "blocks-preview-core",
+	"icon": "layout",
+	"description": "A core heading with either a button or a linked paragraph.",
+	"attributes": {
+		"actionType": {
+			"type": "string",
+			"default": "button"
+		}
+	},
+	"supports": {
+		"html": false
+	},
+	"textdomain": "blocks-preview",
+	"editorScript": "file:./index.js"
+}

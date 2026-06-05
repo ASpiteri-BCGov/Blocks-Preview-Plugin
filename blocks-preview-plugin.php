@@ -37,6 +37,11 @@ function blocks_preview_block_categories( $categories ) {
 				'title' => __( 'Blocks Preview — BCDS', 'blocks-preview' ),
 				'icon'  => null,
 			),
+			array(
+				'slug'  => 'blocks-preview-core',
+				'title' => __( 'Blocks Preview — Core', 'blocks-preview' ),
+				'icon'  => null,
+			),
 		),
 		$categories
 	);
@@ -134,7 +139,7 @@ add_filter( 'block_type_metadata', 'blocks_preview_merge_component_config' );
 function blocks_preview_get_block_paths( $build_dir ) {
 	$paths = array();
 
-	foreach ( array( 'guten', 'bcds' ) as $library ) {
+	foreach ( array( 'guten', 'bcds', 'core' ) as $library ) {
 		$library_dir = $build_dir . '/' . $library;
 
 		if ( ! is_dir( $library_dir ) ) {
