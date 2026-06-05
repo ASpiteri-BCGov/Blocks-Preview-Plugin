@@ -1,0 +1,44 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "blocks-preview-guten/radio-control",
+	"version": "0.1.0",
+	"title": "Guten Radio Control",
+	"category": "blocks-preview-guten",
+	"icon": "marker",
+	"example": {},
+	"attributes": {
+		"label": {
+			"type": "string",
+			"default": "Size"
+		},
+		"selected": {
+			"type": "string",
+			"default": "medium"
+		},
+		"options": {
+			"type": "array",
+			"default": [
+				{
+					"label": "Small",
+					"value": "small"
+				},
+				{
+					"label": "Medium",
+					"value": "medium"
+				},
+				{
+					"label": "Large",
+					"value": "large"
+				}
+			]
+		}
+	},
+	"supports": {
+		"html": false
+	},
+	"textdomain": "blocks-preview",
+	"editorScript": "file:./index.js",
+	"editorStyle": "file:./index.css",
+	"style": "file:./style-index.css"
+}

@@ -1,0 +1,49 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "blocks-preview-guten/custom-select-control",
+	"version": "0.1.0",
+	"title": "Guten Custom Select Control",
+	"category": "blocks-preview-guten",
+	"icon": "editor-ul",
+	"example": {},
+	"attributes": {
+		"label": {
+			"type": "string",
+			"default": "Visibility"
+		},
+		"value": {
+			"type": "array",
+			"default": [
+				{
+					"key": "public",
+					"name": "Public"
+				}
+			]
+		},
+		"options": {
+			"type": "array",
+			"default": [
+				{
+					"key": "public",
+					"name": "Public"
+				},
+				{
+					"key": "private",
+					"name": "Private"
+				},
+				{
+					"key": "password",
+					"name": "Password protected"
+				}
+			]
+		}
+	},
+	"supports": {
+		"html": false
+	},
+	"textdomain": "blocks-preview",
+	"editorScript": "file:./index.js",
+	"editorStyle": "file:./index.css",
+	"style": "file:./style-index.css"
+}

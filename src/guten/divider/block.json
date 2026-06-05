@@ -1,0 +1,23 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "blocks-preview-guten/divider",
+	"version": "0.1.0",
+	"title": "Guten Divider",
+	"category": "blocks-preview-guten",
+	"icon": "minus",
+	"example": {},
+	"attributes": {
+		"orientation": {
+			"type": "string",
+			"default": "horizontal"
+		}
+	},
+	"supports": {
+		"html": false
+	},
+	"textdomain": "blocks-preview",
+	"editorScript": "file:./index.js",
+	"editorStyle": "file:./index.css",
+	"style": "file:./style-index.css"
+}

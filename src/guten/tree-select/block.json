@@ -1,0 +1,46 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "blocks-preview-guten/tree-select",
+	"version": "0.1.0",
+	"title": "Guten Tree Select",
+	"category": "blocks-preview-guten",
+	"icon": "category",
+	"example": {},
+	"attributes": {
+		"label": {
+			"type": "string",
+			"default": "Category"
+		},
+		"selectedId": {
+			"type": "string",
+			"default": "child-1"
+		},
+		"tree": {
+			"type": "array",
+			"default": [
+				{
+					"id": "parent",
+					"name": "Parent",
+					"children": [
+						{
+							"id": "child-1",
+							"name": "Child one"
+						},
+						{
+							"id": "child-2",
+							"name": "Child two"
+						}
+					]
+				}
+			]
+		}
+	},
+	"supports": {
+		"html": false
+	},
+	"textdomain": "blocks-preview",
+	"editorScript": "file:./index.js",
+	"editorStyle": "file:./index.css",
+	"style": "file:./style-index.css"
+}

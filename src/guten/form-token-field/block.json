@@ -1,0 +1,40 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "blocks-preview-guten/form-token-field",
+	"version": "0.1.0",
+	"title": "Guten Form Token Field",
+	"category": "blocks-preview-guten",
+	"icon": "tag",
+	"example": {},
+	"attributes": {
+		"label": {
+			"type": "string",
+			"default": "Tags"
+		},
+		"tokens": {
+			"type": "array",
+			"default": [
+				"WordPress",
+				"Blocks"
+			]
+		},
+		"suggestions": {
+			"type": "array",
+			"default": [
+				"WordPress",
+				"Blocks",
+				"Components",
+				"Editor",
+				"Gutenberg"
+			]
+		}
+	},
+	"supports": {
+		"html": false
+	},
+	"textdomain": "blocks-preview",
+	"editorScript": "file:./index.js",
+	"editorStyle": "file:./index.css",
+	"style": "file:./style-index.css"
+}

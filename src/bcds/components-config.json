@@ -1,0 +1,154 @@
+{
+	"accordion": {
+		"description": "Expandable disclosure panel for showing and hiding related content.",
+		"documentation": "https://designsystem.gov.bc.ca/react-components/?path=/docs/accordion--docs"
+	},
+	"accordion-group": {
+		"description": "Groups multiple accordions with a shared heading.",
+		"documentation": "https://designsystem.gov.bc.ca/react-components/?path=/docs/accordion-group--docs"
+	},
+	"alert-banner": {
+		"description": "Full-width banner for important site-wide messages.",
+		"documentation": "https://designsystem.gov.bc.ca/react-components/?path=/docs/alert-banner--docs"
+	},
+	"alert-dialog": {
+		"description": "Modal dialog for confirmations and critical alerts.",
+		"documentation": "https://designsystem.gov.bc.ca/react-components/?path=/docs/alert-dialog--docs"
+	},
+	"button": {
+		"description": "BC Gov button for actions and navigation.",
+		"documentation": "https://designsystem.gov.bc.ca/react-components/?path=/docs/button--docs"
+	},
+	"button-group": {
+		"description": "Groups related buttons with shared layout.",
+		"documentation": "https://designsystem.gov.bc.ca/react-components/?path=/docs/button-group--docs"
+	},
+	"calendar": {
+		"description": "Calendar grid for date selection.",
+		"documentation": "https://designsystem.gov.bc.ca/react-components/?path=/docs/calendar--docs"
+	},
+	"callout": {
+		"description": "Highlighted content block with optional actions.",
+		"documentation": "https://designsystem.gov.bc.ca/react-components/?path=/docs/callout--docs"
+	},
+	"checkbox": {
+		"description": "Single checkbox input.",
+		"documentation": "https://designsystem.gov.bc.ca/react-components/?path=/docs/checkbox--docs"
+	},
+	"checkbox-group": {
+		"description": "Group of related checkboxes with a shared label.",
+		"documentation": "https://designsystem.gov.bc.ca/react-components/?path=/docs/checkbox-group--docs"
+	},
+	"date-picker": {
+		"description": "Date input with calendar popup.",
+		"documentation": "https://designsystem.gov.bc.ca/react-components/?path=/docs/date-picker--docs"
+	},
+	"dialog": {
+		"description": "Generic modal dialog container.",
+		"documentation": "https://designsystem.gov.bc.ca/react-components/?path=/docs/dialog--docs"
+	},
+	"footer": {
+		"description": "Government of B.C. footer with default content.",
+		"documentation": "https://designsystem.gov.bc.ca/react-components/?path=/docs/footer--docs"
+	},
+	"footer-links": {
+		"description": "Titled list of footer links.",
+		"documentation": "https://designsystem.gov.bc.ca/react-components/?path=/docs/footer-links--docs"
+	},
+	"form": {
+		"description": "Form wrapper with validation support.",
+		"documentation": "https://designsystem.gov.bc.ca/react-components/?path=/docs/form--docs"
+	},
+	"header": {
+		"description": "Government of B.C. header with logo and title.",
+		"documentation": "https://designsystem.gov.bc.ca/react-components/?path=/docs/header--docs"
+	},
+	"heading": {
+		"description": "Styled heading text.",
+		"documentation": "https://designsystem.gov.bc.ca/react-components/?path=/docs/heading--docs"
+	},
+	"inline-alert": {
+		"description": "Compact alert for contextual messages.",
+		"documentation": "https://designsystem.gov.bc.ca/react-components/?path=/docs/inline-alert--docs"
+	},
+	"link": {
+		"description": "Styled link for navigation.",
+		"documentation": "https://designsystem.gov.bc.ca/react-components/?path=/docs/link--docs"
+	},
+	"modal": {
+		"description": "Overlay modal with dialog content.",
+		"documentation": "https://designsystem.gov.bc.ca/react-components/?path=/docs/modal--docs"
+	},
+	"number-field": {
+		"description": "Numeric input with increment controls.",
+		"documentation": "https://designsystem.gov.bc.ca/react-components/?path=/docs/number-field--docs"
+	},
+	"progress-bar": {
+		"description": "Horizontal progress indicator.",
+		"documentation": "https://designsystem.gov.bc.ca/react-components/?path=/docs/progress-bar--docs"
+	},
+	"progress-circle": {
+		"description": "Circular progress indicator.",
+		"documentation": "https://designsystem.gov.bc.ca/react-components/?path=/docs/progress-circle--docs"
+	},
+	"radio": {
+		"description": "Single radio option (shown inside a group).",
+		"documentation": "https://designsystem.gov.bc.ca/react-components/?path=/docs/radio--docs"
+	},
+	"radio-group": {
+		"description": "Group of mutually exclusive radio options.",
+		"documentation": "https://designsystem.gov.bc.ca/react-components/?path=/docs/radio-group--docs"
+	},
+	"select": {
+		"description": "Dropdown select with a list of options.",
+		"documentation": "https://designsystem.gov.bc.ca/react-components/?path=/docs/select--docs"
+	},
+	"separator": {
+		"description": "Visual divider between content sections.",
+		"documentation": "https://designsystem.gov.bc.ca/react-components/?path=/docs/separator--docs"
+	},
+	"switch": {
+		"description": "Toggle switch for boolean settings.",
+		"documentation": "https://designsystem.gov.bc.ca/react-components/?path=/docs/switch--docs"
+	},
+	"tag": {
+		"description": "Compact label for categories or status.",
+		"documentation": "https://designsystem.gov.bc.ca/react-components/?path=/docs/tag--docs"
+	},
+	"tag-group": {
+		"description": "Accessible group wrapper for a list of tags.",
+		"documentation": "https://designsystem.gov.bc.ca/react-components/?path=/docs/tag-group--docs"
+	},
+	"tag-list": {
+		"description": "List layout for rendering multiple tags.",
+		"documentation": "https://designsystem.gov.bc.ca/react-components/?path=/docs/tag-list--docs"
+	},
+	"text": {
+		"description": "Styled body text.",
+		"documentation": "https://designsystem.gov.bc.ca/react-components/?path=/docs/text--docs"
+	},
+	"text-area": {
+		"description": "Multi-line text input.",
+		"documentation": "https://designsystem.gov.bc.ca/react-components/?path=/docs/text-area--docs"
+	},
+	"text-field": {
+		"description": "Single-line text input.",
+		"documentation": "https://designsystem.gov.bc.ca/react-components/?path=/docs/text-field--docs"
+	},
+	"time-field": {
+		"description": "Time input field.",
+		"documentation": "https://designsystem.gov.bc.ca/react-components/?path=/docs/time-field--docs"
+	},
+	"toggle-button": {
+		"description": "Button that toggles on and off.",
+		"documentation": "https://designsystem.gov.bc.ca/react-components/?path=/docs/toggle-button--docs"
+	},
+	"toggle-button-group": {
+		"description": "Group of toggle buttons with single or multiple selection.",
+		"documentation": "https://designsystem.gov.bc.ca/react-components/?path=/docs/toggle-button-group--docs"
+	},
+	"tooltip": {
+		"description": "Contextual label shown on hover or focus.",
+		"documentation": "https://designsystem.gov.bc.ca/react-components/?path=/docs/tooltip--docs"
+	}
+}

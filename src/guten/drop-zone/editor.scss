@@ -1,0 +1,10 @@
+@import '../../shared/editor';
+
+.blocks-preview-drop-zone-block {
+	position: relative;
+	min-height: 120px;
+	padding: 24px;
+	border: 1px dashed #949494;
+	border-radius: 2px;
+	text-align: center;
+}

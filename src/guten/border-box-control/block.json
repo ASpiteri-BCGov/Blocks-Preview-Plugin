@@ -1,0 +1,52 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "blocks-preview-guten/border-box-control",
+	"version": "0.1.0",
+	"title": "Guten Border Box Control",
+	"category": "blocks-preview-guten",
+	"icon": "border",
+	"example": {},
+	"attributes": {
+		"label": {
+			"type": "string",
+			"default": "Borders"
+		},
+		"enableStyle": {
+			"type": "boolean",
+			"default": true
+		},
+		"borderValue": {
+			"type": "object",
+			"default": {
+				"top": {
+					"color": "#72aee6",
+					"style": "dashed",
+					"width": "1px"
+				},
+				"right": {
+					"color": "#72aee6",
+					"style": "dashed",
+					"width": "1px"
+				},
+				"bottom": {
+					"color": "#72aee6",
+					"style": "dashed",
+					"width": "1px"
+				},
+				"left": {
+					"color": "#72aee6",
+					"style": "dashed",
+					"width": "1px"
+				}
+			}
+		}
+	},
+	"supports": {
+		"html": false
+	},
+	"textdomain": "blocks-preview",
+	"editorScript": "file:./index.js",
+	"editorStyle": "file:./index.css",
+	"style": "file:./style-index.css"
+}

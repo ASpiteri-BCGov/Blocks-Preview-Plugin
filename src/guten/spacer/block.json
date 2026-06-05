@@ -1,0 +1,23 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "blocks-preview-guten/spacer",
+	"version": "0.1.0",
+	"title": "Guten Spacer",
+	"category": "blocks-preview-guten",
+	"icon": "minus",
+	"example": {},
+	"attributes": {
+		"margin": {
+			"type": "number",
+			"default": 4
+		}
+	},
+	"supports": {
+		"html": false
+	},
+	"textdomain": "blocks-preview",
+	"editorScript": "file:./index.js",
+	"editorStyle": "file:./index.css",
+	"style": "file:./style-index.css"
+}

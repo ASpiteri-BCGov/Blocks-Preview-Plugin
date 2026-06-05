@@ -1,0 +1,31 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "blocks-preview-guten/guide",
+	"version": "0.1.0",
+	"title": "Guten Guide",
+	"category": "blocks-preview-guten",
+	"icon": "info",
+	"example": {},
+	"attributes": {
+		"pageCount": {
+			"type": "number",
+			"default": 2
+		},
+		"page1Content": {
+			"type": "string",
+			"default": "Welcome to the first guide step."
+		},
+		"page2Content": {
+			"type": "string",
+			"default": "This is the second guide step."
+		}
+	},
+	"supports": {
+		"html": false
+	},
+	"textdomain": "blocks-preview",
+	"editorScript": "file:./index.js",
+	"editorStyle": "file:./index.css",
+	"style": "file:./style-index.css"
+}

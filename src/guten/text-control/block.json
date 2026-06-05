@@ -1,0 +1,31 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "blocks-preview-guten/text-control",
+	"version": "0.1.0",
+	"title": "Guten Text Control",
+	"category": "blocks-preview-guten",
+	"icon": "edit",
+	"example": {},
+	"attributes": {
+		"label": {
+			"type": "string",
+			"default": "Title"
+		},
+		"value": {
+			"type": "string",
+			"default": "Sample title"
+		},
+		"help": {
+			"type": "string",
+			"default": "Enter a descriptive title."
+		}
+	},
+	"supports": {
+		"html": false
+	},
+	"textdomain": "blocks-preview",
+	"editorScript": "file:./index.js",
+	"editorStyle": "file:./index.css",
+	"style": "file:./style-index.css"
+}

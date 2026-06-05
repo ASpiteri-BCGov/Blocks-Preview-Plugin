@@ -1,0 +1,47 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "blocks-preview-guten/card",
+	"version": "0.1.0",
+	"title": "Guten Card",
+	"category": "blocks-preview-guten",
+	"icon": "index-card",
+	"example": {},
+	"attributes": {
+		"headerTitle": {
+			"type": "string",
+			"default": "Card Title"
+		},
+		"bodyContent": {
+			"type": "string",
+			"default": "Card content goes here."
+		},
+		"footerContent": {
+			"type": "string",
+			"default": "Card Footer"
+		},
+		"elevation": {
+			"type": "number",
+			"default": 0
+		},
+		"isBorderless": {
+			"type": "boolean",
+			"default": false
+		},
+		"isRounded": {
+			"type": "boolean",
+			"default": true
+		},
+		"size": {
+			"type": "string",
+			"default": "medium"
+		}
+	},
+	"supports": {
+		"html": false
+	},
+	"textdomain": "blocks-preview",
+	"editorScript": "file:./index.js",
+	"editorStyle": "file:./index.css",
+	"style": "file:./style-index.css"
+}

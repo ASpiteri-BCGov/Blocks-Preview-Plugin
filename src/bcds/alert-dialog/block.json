@@ -1,0 +1,31 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "blocks-preview-bcds/alert-dialog",
+	"version": "0.1.0",
+	"title": "BCDS Alert Dialog",
+	"category": "blocks-preview-bcds",
+	"icon": "warning",
+	"example": {},
+	"attributes": {
+		"variant": {
+			"type": "string",
+			"default": "confirmation"
+		},
+		"title": {
+			"type": "string",
+			"default": "Confirm action"
+		},
+		"message": {
+			"type": "string",
+			"default": "Are you sure you want to continue?"
+		}
+	},
+	"supports": {
+		"html": false
+	},
+	"textdomain": "blocks-preview",
+	"editorScript": "file:./index.js",
+	"editorStyle": "file:./index.css",
+	"style": "file:./style-index.css"
+}

@@ -1,0 +1,31 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "blocks-preview-guten/query-controls",
+	"version": "0.1.0",
+	"title": "Guten Query Controls",
+	"category": "blocks-preview-guten",
+	"icon": "filter",
+	"example": {},
+	"attributes": {
+		"orderBy": {
+			"type": "string",
+			"default": "date"
+		},
+		"order": {
+			"type": "string",
+			"default": "desc"
+		},
+		"numberOfItems": {
+			"type": "number",
+			"default": 10
+		}
+	},
+	"supports": {
+		"html": false
+	},
+	"textdomain": "blocks-preview",
+	"editorScript": "file:./index.js",
+	"editorStyle": "file:./index.css",
+	"style": "file:./style-index.css"
+}

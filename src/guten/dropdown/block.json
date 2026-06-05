@@ -1,0 +1,27 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "blocks-preview-guten/dropdown",
+	"version": "0.1.0",
+	"title": "Guten Dropdown",
+	"category": "blocks-preview-guten",
+	"icon": "arrow-down-alt2",
+	"example": {},
+	"attributes": {
+		"buttonText": {
+			"type": "string",
+			"default": "Toggle dropdown"
+		},
+		"contentText": {
+			"type": "string",
+			"default": "Dropdown content goes here."
+		}
+	},
+	"supports": {
+		"html": false
+	},
+	"textdomain": "blocks-preview",
+	"editorScript": "file:./index.js",
+	"editorStyle": "file:./index.css",
+	"style": "file:./style-index.css"
+}

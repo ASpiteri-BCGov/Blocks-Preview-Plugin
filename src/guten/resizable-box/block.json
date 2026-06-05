@@ -1,0 +1,31 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "blocks-preview-guten/resizable-box",
+	"version": "0.1.0",
+	"title": "Guten Resizable Box",
+	"category": "blocks-preview-guten",
+	"icon": "image-crop",
+	"example": {},
+	"attributes": {
+		"width": {
+			"type": "number",
+			"default": 240
+		},
+		"height": {
+			"type": "number",
+			"default": 160
+		},
+		"content": {
+			"type": "string",
+			"default": "Resizable content"
+		}
+	},
+	"supports": {
+		"html": false
+	},
+	"textdomain": "blocks-preview",
+	"editorScript": "file:./index.js",
+	"editorStyle": "file:./index.css",
+	"style": "file:./style-index.css"
+}

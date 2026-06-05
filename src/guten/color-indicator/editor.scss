@@ -1,0 +1,13 @@
+@import '../../shared/editor';
+
+.blocks-preview-color-indicator-block {
+	display: flex;
+	align-items: center;
+	gap: 8px;
+	padding: 8px 0;
+}
+
+.blocks-preview-color-indicator-block__value {
+	font-size: 13px;
+	color: #757575;
+}

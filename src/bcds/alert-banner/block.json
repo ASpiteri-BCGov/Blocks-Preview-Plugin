@@ -1,0 +1,31 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "blocks-preview-bcds/alert-banner",
+	"version": "0.1.0",
+	"title": "BCDS Alert Banner",
+	"category": "blocks-preview-bcds",
+	"icon": "info",
+	"example": {},
+	"attributes": {
+		"variant": {
+			"type": "string",
+			"default": "info"
+		},
+		"message": {
+			"type": "string",
+			"default": "This is an alert banner message."
+		},
+		"isCloseable": {
+			"type": "boolean",
+			"default": false
+		}
+	},
+	"supports": {
+		"html": false
+	},
+	"textdomain": "blocks-preview",
+	"editorScript": "file:./index.js",
+	"editorStyle": "file:./index.css",
+	"style": "file:./style-index.css"
+}

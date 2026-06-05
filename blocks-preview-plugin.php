@@ -2,8 +2,8 @@
 /**
  * Plugin Name:       Blocks Preview
  * Plugin URI:        https://github.com/aspiteri/Blocks-Preview-Plugin
- * Description:       Preview WordPress block editor components as blocks.
- * Version:           0.5.0
+ * Description:       Preview WordPress block editor and BC Gov design system components as blocks.
+ * Version:           0.6.0
  * Requires at least: 6.5
  * Requires PHP:      7.4
  * Author:            aspiteri
@@ -19,119 +19,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 
 /**
- * Block slugs built by @wordpress/scripts (must match build/ folder names).
- */
-const BLOCKS_PREVIEW_BLOCK_SLUGS = array(
-	'base-field',
-	'alignment-matrix-control',
-	'angle-picker-control',
-	'animate',
-	'autocomplete',
-	'base-control',
-	'border-box-control',
-	'border-control',
-	'box-control',
-	'button',
-	'button-group',
-	'card',
-	'checkbox-control',
-	'clipboard-button',
-	'color-indicator',
-	'color-palette',
-	'color-picker',
-	'combobox-control',
-	'custom-gradient-picker',
-	'custom-select-control',
-	'dashicon',
-	'date-time-picker',
-	'disabled',
-	'draggable',
-	'drop-zone',
-	'dropdown',
-	'dropdown-menu',
-	'duotone-picker',
-	'elevation',
-	'external-link',
-	'flex',
-	'focal-point-picker',
-	'font-size-picker',
-	'form-toggle',
-	'form-token-field',
-	'gradient-picker',
-	'guide',
-	'heading',
-	'h-stack',
-	'icon',
-	'input-control',
-	'menu-group',
-	'menu-item',
-	'menu-items-choice',
-	'modal',
-	'navigable-menu',
-	'navigator',
-	'notice',
-	'notice-list',
-	'panel',
-	'placeholder',
-	'popover',
-	'progress-bar',
-	'query-controls',
-	'radio-control',
-	'range-control',
-	'badge',
-	'calendar',
-	'circular-option-picker',
-	'composite',
-	'confirm-dialog',
-	'custom-select-control-v2',
-	'divider',
-	'focusable-iframe',
-	'form-file-upload',
-	'grid',
-	'higher-order',
-	'isolated-event-container',
-	'item-group',
-	'keyboard-shortcuts',
-	'menu',
-	'mobile',
-	'number-control',
-	'radio-group',
-	'resizable-box',
-	'responsive-wrapper',
-	'sandbox',
-	'scroll-lock',
-	'scrollable',
-	'search-control',
-	'select-control',
-	'slot-fill',
-	'snackbar',
-	'spacer',
-	'spinner',
-	'surface',
-	'tab-panel',
-	'tabs',
-	'text',
-	'text-control',
-	'text-highlight',
-	'textarea-control',
-	'theme',
-	'toggle-control',
-	'toggle-group-control',
-	'toolbar',
-	'tools-panel',
-	'tooltip',
-	'tree-grid',
-	'tree-select',
-	'truncate',
-	'unit-control',
-	'v-stack',
-	'view',
-	'visually-hidden',
-	'z-stack',
-);
-
-/**
- * Adds an inserter category so preview blocks are easy to find.
+ * Adds inserter categories for preview blocks.
  *
  * @param array $categories Registered block categories.
  * @return array
@@ -140,8 +28,13 @@ function blocks_preview_block_categories( $categories ) {
 	return array_merge(
 		array(
 			array(
-				'slug'  => 'blocks-preview',
-				'title' => __( 'Blocks Preview', 'blocks-preview' ),
+				'slug'  => 'blocks-preview-guten',
+				'title' => __( 'Blocks Preview — Guten', 'blocks-preview' ),
+				'icon'  => null,
+			),
+			array(
+				'slug'  => 'blocks-preview-bcds',
+				'title' => __( 'Blocks Preview — BCDS', 'blocks-preview' ),
 				'icon'  => null,
 			),
 		),
@@ -171,30 +64,31 @@ function blocks_preview_missing_build_notice() {
 }
 
 /**
- * Loads shared component metadata from src/components-config.json.
+ * Loads component metadata config for a block name prefix.
  *
+ * @param string $prefix Config subdirectory (`guten` or `bcds`).
  * @return array<string, array<string, mixed>>
  */
-function blocks_preview_get_components_config() {
-	static $config = null;
+function blocks_preview_get_library_config( $prefix ) {
+	static $configs = array();
 
-	if ( null !== $config ) {
-		return $config;
+	if ( isset( $configs[ $prefix ] ) ) {
+		return $configs[ $prefix ];
 	}
 
-	$config_path = __DIR__ . '/src/components-config.json';
+	$config_path = __DIR__ . '/src/' . $prefix . '/components-config.json';
 
 	if ( ! file_exists( $config_path ) ) {
-		$config = array();
-		return $config;
+		$configs[ $prefix ] = array();
+		return $configs[ $prefix ];
 	}
 
 	// phpcs:ignore WordPress.WP.AlternativeFunctions.file_get_contents_file_get_contents -- Reading local plugin config.
 	$decoded = json_decode( file_get_contents( $config_path ), true );
 
-	$config = is_array( $decoded ) ? $decoded : array();
+	$configs[ $prefix ] = is_array( $decoded ) ? $decoded : array();
 
-	return $config;
+	return $configs[ $prefix ];
 }
 
 /**
@@ -204,20 +98,71 @@ function blocks_preview_get_components_config() {
  * @return array
  */
 function blocks_preview_merge_component_config( $metadata ) {
-	if ( empty( $metadata['name'] ) || 0 !== strpos( $metadata['name'], 'blocks-preview/' ) ) {
+	if ( empty( $metadata['name'] ) ) {
 		return $metadata;
 	}
 
-	$slug   = substr( $metadata['name'], strlen( 'blocks-preview/' ) );
-	$config = blocks_preview_get_components_config();
+	$name = $metadata['name'];
 
-	if ( empty( $config[ $slug ] ) || ! is_array( $config[ $slug ] ) ) {
+	if ( 0 === strpos( $name, 'blocks-preview-guten/' ) ) {
+		$config_key = substr( $name, strlen( 'blocks-preview-guten/' ) );
+		$config     = blocks_preview_get_library_config( 'guten' );
+	} elseif ( 0 === strpos( $name, 'blocks-preview-bcds/' ) ) {
+		$config_key = substr( $name, strlen( 'blocks-preview-bcds/' ) );
+		$config     = blocks_preview_get_library_config( 'bcds' );
+	} elseif ( 0 === strpos( $name, 'blocks-preview/' ) ) {
+		$config_key = substr( $name, strlen( 'blocks-preview/' ) );
+		$config     = blocks_preview_get_library_config( 'guten' );
+	} else {
 		return $metadata;
 	}
 
-	return array_merge( $metadata, $config[ $slug ] );
+	if ( empty( $config[ $config_key ] ) || ! is_array( $config[ $config_key ] ) ) {
+		return $metadata;
+	}
+
+	return array_merge( $metadata, $config[ $config_key ] );
 }
 add_filter( 'block_type_metadata', 'blocks_preview_merge_component_config' );
+
+/**
+ * Returns block directories under build/guten and build/bcds for legacy registration.
+ *
+ * @param string $build_dir Plugin build directory.
+ * @return string[] Relative block paths (e.g. guten/button).
+ */
+function blocks_preview_get_block_paths( $build_dir ) {
+	$paths = array();
+
+	foreach ( array( 'guten', 'bcds' ) as $library ) {
+		$library_dir = $build_dir . '/' . $library;
+
+		if ( ! is_dir( $library_dir ) ) {
+			continue;
+		}
+
+		// phpcs:ignore WordPress.WP.AlternativeFunctions.file_system_operations_scandir -- Local build scan.
+		$entries = scandir( $library_dir );
+
+		if ( false === $entries ) {
+			continue;
+		}
+
+		foreach ( $entries as $entry ) {
+			if ( '.' === $entry || '..' === $entry ) {
+				continue;
+			}
+
+			$block_dir = $library_dir . '/' . $entry;
+
+			if ( is_dir( $block_dir ) && file_exists( $block_dir . '/block.json' ) ) {
+				$paths[] = $library . '/' . $entry;
+			}
+		}
+	}
+
+	return $paths;
+}
 
 /**
  * Registers blocks built with @wordpress/scripts.
@@ -236,8 +181,8 @@ function blocks_preview_register_blocks() {
 		return;
 	}
 
-	foreach ( BLOCKS_PREVIEW_BLOCK_SLUGS as $block_slug ) {
-		$block_dir = $build_dir . '/' . $block_slug;
+	foreach ( blocks_preview_get_block_paths( $build_dir ) as $block_path ) {
+		$block_dir = $build_dir . '/' . $block_path;
 
 		if ( file_exists( $block_dir . '/block.json' ) ) {
 			register_block_type( $block_dir );
@@ -247,9 +192,7 @@ function blocks_preview_register_blocks() {
 add_action( 'init', 'blocks_preview_register_blocks' );
 
 /**
- * Enqueues wp-components styles so component previews match the editor UI.
- *
- * @see https://developer.wordpress.org/block-editor/reference-guides/components/
+ * Enqueues editor styles for component previews.
  */
 function blocks_preview_enqueue_editor_styles() {
 	wp_enqueue_style( 'wp-components' );

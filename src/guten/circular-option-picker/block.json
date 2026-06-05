@@ -1,0 +1,23 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "blocks-preview-guten/circular-option-picker",
+	"version": "0.1.0",
+	"title": "Guten Circular Option Picker",
+	"category": "blocks-preview-guten",
+	"icon": "art",
+	"example": {},
+	"attributes": {
+		"selectedColor": {
+			"type": "string",
+			"default": "#3858e9"
+		}
+	},
+	"supports": {
+		"html": false
+	},
+	"textdomain": "blocks-preview",
+	"editorScript": "file:./index.js",
+	"editorStyle": "file:./index.css",
+	"style": "file:./style-index.css"
+}

@@ -1,0 +1,31 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "blocks-preview-bcds/tag",
+	"version": "0.1.0",
+	"title": "BCDS Tag",
+	"category": "blocks-preview-bcds",
+	"icon": "tag",
+	"example": {},
+	"attributes": {
+		"textValue": {
+			"type": "string",
+			"default": "Tag label"
+		},
+		"color": {
+			"type": "string",
+			"default": "bc-blue"
+		},
+		"tagStyle": {
+			"type": "string",
+			"default": "rectangular"
+		}
+	},
+	"supports": {
+		"html": false
+	},
+	"textdomain": "blocks-preview",
+	"editorScript": "file:./index.js",
+	"editorStyle": "file:./index.css",
+	"style": "file:./style-index.css"
+}

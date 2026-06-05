@@ -1,0 +1,27 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "blocks-preview-bcds/checkbox",
+	"version": "0.1.0",
+	"title": "BCDS Checkbox",
+	"category": "blocks-preview-bcds",
+	"icon": "yes",
+	"example": {},
+	"attributes": {
+		"label": {
+			"type": "string",
+			"default": "Checkbox label"
+		},
+		"isSelected": {
+			"type": "boolean",
+			"default": false
+		}
+	},
+	"supports": {
+		"html": false
+	},
+	"textdomain": "blocks-preview",
+	"editorScript": "file:./index.js",
+	"editorStyle": "file:./index.css",
+	"style": "file:./style-index.css"
+}
